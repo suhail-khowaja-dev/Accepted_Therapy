@@ -1,8 +1,0 @@
-[31-Oct-2022 00:40:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fsmb7mo38q9v/public_html/live_website/acceptedtherapy.com/config/app.php:16
-Stack trace:
-#0 {main}
-  thrown in /home/fsmb7mo38q9v/public_html/live_website/acceptedtherapy.com/config/app.php on line 16
-[31-Oct-2022 00:40:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/fsmb7mo38q9v/public_html/live_website/acceptedtherapy.com/config/services.php:18
-Stack trace:
-#0 {main}
-  thrown in /home/fsmb7mo38q9v/public_html/live_website/acceptedtherapy.com/config/services.php on line 18
