@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/images/logo.png" sizes="" type="image/x-icon">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css" />
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="../../../assets/css/style.css" />
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Butter JS -->
+    <script src="../../../assets/js/butter.js"></script>
+    <!-- SWIPER SLIDER CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/swiper-bundle.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="../../../assets/css/animate.min.css" />
+    <!-- WOW CSS -->
+    <link rel="stylesheet" href="../../../assets/css/wow.css" />
+
+    <title>Accepted Therapy | Sliding Scale Fee Application</title>
+</head>
+
+<body>
+    <!-- ================================== HEADER =============================== -->
+    <header class="lg-screen-navbar">
+        <div class="container bg-success mynav">
+            <nav class="navbar fixed-top navbar-light d-flex flex-wrap align-items-center justify-content-center">
+                <div class="logo">
+                    <a class="navbar-brand" href="../../../index.html">
+                        <img src="../../../assets/images/logo.png" alt="logo" class="d-inline-block align-text-top">
+                    </a>
+                </div>
+
+                <div class="nav-menu">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="../../../index.html" class="nav-link px-2">
+                                Home
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a href="../../../index.html?box=meetteam" class="nav-link px-2">
+                                Meet Our Team
+                            </a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Meet Our Team
+                            </a>    
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear,
+                                        LCSW</a></li>
+                                <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Lori Hodges,
+                                        LMSW</a></li>
+                                <li><a href="../../../assets/pages/therapist/nikki.html" class="link-dark rounded">Yvette Claverie,
+                                        LCSW</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/resources.html" class="nav-link px-2">
+                                Resources
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/scheduling.html" class="nav-link px-2">
+                                Scheduling
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../../assets/pages/contactUs.html" class="nav-link px-2">
+                                Contact Us
+                            </a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a href="" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                Sign In
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="" class="nav-link px-2" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="text-end social-icons mx-5">
+                    <a class="" href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a class="" href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- ================================== SIDE NAVBAR ON MOBILE SCREENS =============================== -->
+    <header class="mobile-screen-nav fixed-top">
+        <div id="main-content">
+            <!-- <div id="title">Animated Sidebar Navigation Demo</div> -->
+        </div>
+        <div id="btn">
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
+        <div id="box">
+            <!-- <div id="logo-container">
+                <a class="navbar-brand" href="../../../index.html">
+                    <img src="../../../assets/images/logo2.svg" alt="logo-image">
+                </a>
+            </div> -->
+            <div id="items">
+                <div class="item"> <a class="nav-link" href="../../../index.html">Home</a></div>
+                <!-- <div class="item"><a class="nav-link" href="../../../index.html?box=meetteam">Meet Our Team</a></div> -->
+                <div class="item">
+                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#dashboard-collapse" aria-expanded="false">
+                        Meet Our Team
+                    </button>
+                    <div class="collapse" id="dashboard-collapse">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Nikki Dear,
+                                    LCSW</a></li>
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Lori Hodges,
+                                    LMSW</a></li>
+                            <li><a href="../../../ assets/pages/therapist/nikki.html" class="link-dark rounded">Yvette Claverie,
+                                    LCSW</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/resources.html">Resources</a></div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/scheduling.html">Scheduling</a>
+                </div>
+                <div class="item"><a class="nav-link" href="../../../assets/pages/contactUs.html">Contact Us</a></div>
+           
+                <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2">Sign In</a></div>
+                <div class="item"><a href="" class="nav-link" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1">Sign Up</a></div>
+                <div id="social-items" class="d-flex justify-content-center">
+                    <div class="item">
+                        <a class="nav-link" href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a class="nav-link" href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </header>
+    <!-- ================================== Modal 01 ===================================-->
+    <div class="modal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal"
+                         aria-label="Close"></button>
+                 </div> -->
+                <div class="modal-body">
+
+                    <!-- ================================== SIGNIN FORM ============================= -->
+                    <section>
+                        <div class="siginin-main">
+
+                            <div class="container signin-wrap position-relative mt-3">
+                                <div class="position-absolute close-button">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="h-1 d-flex justify-content-center pt-5 wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <h5 class="signup-head">
+                                        Sign Up
+                                    </h5>
+                                </div>
+
+                                <div class="signup-img1 position-absolute wow bounceIn" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <img src="../../../assets/images/banner3-img.svg" alt="">
+                                </div>
+                                <div class="signup-img2 position-absolute wow fadeInRight" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <img src="../../../assets/images/banner3-img.svg" alt="">
+                                </div>
+                                <div class="container form4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s ">
+                                    <form action="" method="" class="">
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control py-3" name="username"
+                                                    id="username" placeholder="Name" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="email" class="form-control py-3" name="email" id="email"
+                                                    placeholder="Email Address" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="password" class="form-control py-3" name="password"
+                                                    placeholder="Password" />
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mt-4 pb-4 text-center">
+                                            <a href="javascript:void(0);" class="w-100">
+                                                <button type="submit" class="btn py-2">
+                                                    Sign Up
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================== Modal 02 ==================================-->
+    <div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal"
+                         aria-label="Close"></button>
+                 </div> -->
+                <div class="modal-body">
+
+                    <!-- ================================== SIGNIN FORM ============================= -->
+                    <section>
+                        <div class="siginin-main">
+                            <div class="container signin-wrap position-relative  mt-3">
+                                <div class="position-absolute close-button">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="h-1 d-flex justify-content-center pt-5 wow fadeInUp" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <h5>
+                                        Sign In
+                                    </h5>
+                                </div>
+
+                                <div class="corner-img1 position-absolute wow bounceIn" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <img src="../../../assets/images/banner3-img.svg" alt="">
+                                </div>
+                                <div class="corner-img2 position-absolute wow fadeInLeft" data-wow-duration="1s"
+                                    data-wow-delay="0.5s">
+                                    <img src="../../../assets/images/banner3-img.svg" alt="">
+                                </div>
+                                <div class="container form4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s ">
+                                    <form action="" method="" class="">
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control py-3" name="username"
+                                                    id="username" placeholder="Username/Email Address" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group mb-4">
+                                            <div class="input-group">
+                                                <input type="password" class="form-control py-3" name="password"
+                                                    placeholder="Password" />
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex justify-content-end">
+                                            <a href="../../../assets/pages/registration/forgotpass.html" class=""
+                                                id="forgot">
+                                                Forget Password?
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-4 pb-4 text-center">
+                                            <a href="javascript:void(0);" class="w-100">
+                                                <button type="submit" class="btn py-2">
+                                                    Sign In
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="butter">
+        <!-- ==================================   Sliding Scale Fee Application FORM ============================= -->
+        <section class="forms">
+            <div class="container form-intake form-reff">
+                <div class="container form1">
+                    <fieldset class="border">
+                        <legend class="text-center text-uppercase">
+                            Sliding Scale Fee Application
+                        </legend>
+                        <div class="position-relative therapy-border d-flex justify-content-center flex-wrap pt-4">
+                            <div class="therapy-border-img">
+                                <img src="../../../assets/images/logo2.svg" alt="logo">
+                            </div>
+                        </div>
+                        <!-- FORM -->
+                        <div class="container form-fileds mt-5">
+                            <!-- Payment Data  -->
+                            <form action="" method="" id="sliding-scale-forms" class="">
+                                <div class="payments-fields">
+                                    <div class="form-group mb-4">
+                                        <label for="date">Date:</label>
+                                        <input type="date" class="form-control py-3" id="date" value="2022-01-01"
+                                            required />
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <input type="text" class="form-control py-3" id="name" placeholder="Name"
+                                            value="" required />
+                                    </div>
+                                    <div>
+                                        <p>
+                                            Sliding scale rate is based on family size and annual income. This form will
+                                            be help me to figure out which level of the sliding scale you qualify for.
+                                            This application will be reevaluated every six months or in the event of
+                                            financial change in the household. The sliding scale rate is not applicable
+                                            to anyone with insurance coverage that is in network with Accepted Therapy
+                                            Services.
+                                        </p>
+                                    </div>
+                                    <!-- HouseHold -->
+                                    <div class="household py-4">
+                                        <div class="row">
+                                            <h5>Household Members</h5>
+                                            <p>
+                                                Please list all dependent members of your household and their date of
+                                                birth. If you have a dependent who is over the age of 18, additional
+                                                information may be requested.
+                                            </p>
+                                        </div>
+                                        <div class="form-group mb-4 forms-table">
+                                            <table class="table table-striped table-hover table-responsive"
+                                                id="tab_logic">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">
+                                                            #
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Name
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Relationship to you
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Date of Birth
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id='addr0'>
+                                                        <td>1</td>
+                                                        <td class="d-flex justify-content-center">
+                                                            <input type="text" name='name[]' placeholder=''
+                                                                class="form-control" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name='relationship[]' placeholder='Self'
+                                                                class="form-control" />
+                                                        </td>
+                                                        <td class="d-flex justify-content-center" >
+                                                            <input type="date" name='dob[]' placeholder=''
+                                                                class="form-control" />
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr id='addr1'></tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="form-btn d-flex justify-content-between">
+                                                <div class="add-data">
+                                                    <button id="add_row" class="btn">Add Member</button>
+                                                </div>
+                                                <div class="remove-data">
+                                                    <button id='delete_row' class="btn ">Delete
+                                                        Member</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Household Expenses -->
+                                    <div class="household-expen">
+                                        <div class="row">
+                                            <h5>Household Expenses</h5>
+                                            <p>
+                                                This is a list of all of your monthly household expenses. I will take
+                                                these expenses into consideration when determining your sliding scale
+                                                fee rate.
+                                            </p>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <table class="table table-striped table-hover table-responsive"
+                                                id="table2_logic">
+
+                                                <tbody>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Rent/Mortgage</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Electricity</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Water/Sewer/Gas</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Car Payment(s)</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Phone</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+
+                                                            <label for="">Insurances (car, home, renter)</label>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id=''>
+
+                                                        <td class="text-center">
+                                                            <input type="text" placeholder='Other (Explain)'
+                                                                class="form-control text-center" name="other[]"
+                                                                id="other1" value="" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                name="amount[]" id="" value="" />
+                                                        </td>
+
+                                                    </tr>
+                                                    <tr id='addrow1'></tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- <div class="form-btn d-flex justify-content-between">
+                                                <div class="add-data">
+                                                    <button id="add_row1" class="btn float-left">Add other</button>
+                                                </div>
+                                                <div class="remove-data">
+                                                    <button id='delete_row1' class="float-right btn">Delete
+                                                        other</button>
+                                                </div>
+
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                    <!-- Household Income -->
+                                    <div class="household-income py-4">
+                                        <div class="row">
+                                            <h5>Household Income</h5>
+                                            <p>
+                                                Total all sources of income for each box and place the total amount in
+                                                the second column. Then denote whether the income is received monthly or
+                                                annually. </p>
+                                        </div>
+                                        <div class="form-group mb-4 d-flex forms-table">
+                                            <table class="table table-striped table-hover" id="tab3_logic">
+                                                <thead>
+                                                    <tr>
+                                                        <!-- <th class="text-center">
+                                                            #
+                                                        </th> -->
+                                                        <th class="text-center">
+                                                            Source of Income
+                                                        </th>
+                                                        <th class="text-center">
+                                                            Amount </th>
+                                                        <th class="text-center">
+                                                            Frequency </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id='' class="text-center">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">Wages, salaries, or tips</label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    min="0" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">Unemployment
+                                                                Worker’s comp.
+                                                                Social Security Disability
+                                                                Public assistance
+                                                                Survivor benefits Pension or retirement
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    min="0" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td>
+                                                            <label for="">
+                                                                Child Support
+                                                                Rent
+                                                                Royalties
+                                                                Alimony
+
+                                                            </label>
+                                                        </td>
+                                                        <td>
+                                                            <div class="form-group">
+                                                                <input type="number" name='number[]' placeholder='$'
+                                                                    min="0" class="form-control" />
+                                                            </div>
+
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr id='' class="">
+                                                        <!-- <td>1</td> -->
+                                                        <td class="text-center">
+                                                            <input type="text" placeholder='Any other income sources'
+                                                                class="form-control" name="other[]" id="other1"
+                                                                value="" />
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" placeholder='$' class="form-control"
+                                                                name="amount[]" id="" min="0" />
+                                                        </td>
+                                                        <td>
+                                                            <div class="d-flex justify-content-center">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Montlhy</label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="flexCheckDefault3">
+                                                                    <label for="">Annually</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </td>
+
+                                                    </tr>
+
+
+                                                    <tr id=''></tr>
+                                                </tbody>
+                                                <caption class="text-center">(Please be available to provide supporting
+                                                    documentation of your income upon request.)</caption>
+                                            </table>
+
+                                        </div>
+                                    </div>
+                                    <!-- <div class="form-group mb-4 para-input d-flex flex-wrap">
+
+                                        <p class="d-flex flex-wrap align-items-center">
+
+                                            <span class="txt2">I Your Name understand that I am being considered for a
+                                                sliding scale
+                                                fee at Accepted Therapy Services. I also understand that I may not meet
+                                                criteria for a sliding scale. I further understand that that if my
+                                                financial situation changes, I am expected to notify Accepted Therapy
+                                                Services prior to my next session so that my sliding scale rate can be
+                                                reassessed for need. </span>
+                                        </p>
+
+                                    </div> -->
+                                    <div class="form-group mb-4 para-input d-flex flex-wrap">
+
+                                        <p class="d-flex flex-wrap align-items-center">
+                                            I &nbsp;<span class="hide"></span>
+                                            <input type="text" class="form-control txt" placeholder="Your Name" value=""
+                                                required>
+                                            <span class="txt2">understand that I am being considered for a sliding scale
+                                                fee at Accepted Therapy Services. </span> <span> I also understand that
+                                                I may not meet
+                                                criteria for a sliding scale. I further understand that that if my
+                                                financial situation changes, I am expected to notify Accepted Therapy
+                                                Services prior to my next session so that my sliding scale rate can be
+                                                reassessed for need. </span>
+                                        </p>
+
+                                    </div>
+
+                                    <div class="form-group mb-4">
+                                        <label for="">Signature box</label>
+                                        <div class="sign-main">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="form-control" name="" id="">
+
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <span id="signbox-date" class="d-flex justify-content-end"></span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center from-btn mb-5">
+                                        <a href="javascript:void(0);" class="w-100">
+                                            <button type="submit" class="btn" name="">
+                                                Submit
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+
+
+                    </fieldset>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- ================================== Accepted Therapy Border =============================== -->
+        <section>
+            <div class="therapy-logo">
+                <div class="position-relative therapy-border d-flex justify-content-center pt-4">
+                    <div class="therapy-border-img wow bounceIn" data-wow-duration="1s" data-wow-delay="0.75s">
+                        <img src="../../../assets/images/border-img.png" alt="">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center accepted-therapy">
+                    <h1 class="h-1 position-relative text-center">
+                        Accepted Therapy Services
+                    </h1>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- ================================== FOOTER =============================== -->
+        <footer>
+            <div class="">
+                <div class="container py-5">
+                    <div class="row pt-4">
+                        <div class="col-lg-5 px-5">
+                            <div class="first-col">
+                                <h5>
+                                    Hattiesburg
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3 mt-3">
+                                        <div class="phone-img d-inline-block">
+                                            <img src="../../../assets/images/phone.svg" alt="">
+                                        </div>
+                                        <a href="tel:+6016023624" class="p-3">
+                                            601-602-3624
+                                        </a>
+
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="address-img mb-4">
+                                            <img src="../../../assets/images/address.svg" alt="">
+                                        </div>
+                                        <a href="https://goo.gl/maps/TYRrety8Nsvwg3YbA" target="_blank" class="p-3">
+                                            423 Weathersby Road Suite 130,
+                                            Hattiesburg, MS 39402
+                                        </a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5">
+                            <div class="second-col">
+                                <h5>
+                                    Fort Worth
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3 mt-3">
+                                        <div class="phone-img d-inline-block">
+                                            <img src="../../../assets/images/phone.svg" alt="">
+                                        </div>
+                                        <a href="tel:+8177447424" class="p-3">
+                                            817-744-7424
+                                        </a>
+
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <div class="address-img mb-4">
+                                            <img src="../../../assets/images/address.svg" alt="">
+                                        </div>
+                                        <a href="https://goo.gl/maps/8YDZH2iF2gqoftWu7" target="_blank" class="p-3">
+                                            7833 Oakmont Blvd, Suite 110
+                                            Fort Worth, TX 76132
+
+                                        </a>
+
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="third-col text-center mt-sm-4 mt-lg-0">
+                                <h5>
+                                    Social Links
+                                </h5>
+                                <ul class="list-unstyled mb-0">
+                                   <li class="mb-5">
+                                        <a href="https://www.facebook.com/" class="" target="__blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/" class="" target="__blank">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 d-flex justify-content-center copyright">
+                    <a href="javascript:void(0);">
+                        © 2022 Accepted Therapy. All rights reserved
+                    </a>
+                </div>
+            </div>
+
+
+        </footer>
+        <!-- //Butter Div ends// -->
+
+    </div>
+
+    <!-- /container -->
+    <button class="btn  scroll-top" data-scroll="up" type="button">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ====Jquery JS ==== -->
+    <script src="../../../assets/js/jquery.min.js"> </script>
+    <!-- ===Boostrap Bundle JS ====-->
+    <script src="../../../assets/js/bootstrap.bundle.min.js"> </script>
+    <!-- swiper slider js -->
+    <script src="../../../assets/js/swiper-bundle.min.js"></script>
+    <!-- WOW JS -->
+    <script src="../../../assets/js/wow.js"> </script>
+    <!-- Butter JS -->
+    <script src="../../../assets/js/butter.js"></script>
+    <!-- Custom Js -->
+    <script src="../../../assets/js/javascript.js"></script>
+    <!-- Form JAVASCRIPT -->
+    <script src="../../../assets/pages/forms/js/javascript.js">
+
+    </script>
+
+</body>
+
+</html>

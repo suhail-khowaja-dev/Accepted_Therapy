@@ -1,0 +1,5482 @@
+@font-face {
+    font-family: JA-Hand-Reg;
+    src: url('../../assets/googlefonts/Just_Another_Hand/JustAnotherHand-Regular.ttf');
+}
+
+@font-face {
+    font-family: Raleway-Roman-Reg;
+    src: url('../../assets/googlefonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Solway-Bold;
+    src: url('../../assets/googlefonts/Solway/Solway-Bold.ttf');
+}
+
+@font-face {
+    font-family: Solway-Reg;
+    src: url('../../assets/googlefonts/Solway/Solway-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Light;
+    src: url('../../assets/googlefonts/Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Myraid-Pro;
+    src: url('../../assets/googlefonts/MyriadPro/Myriad\ Pro\ Regular.ttf');
+}
+
+/* ============= HOME PACKAGE START=================== */
+.home-package .card.card-width{
+    width:50%;
+    margin:auto;
+}
+.h-1.for-font h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 5rem;
+    z-index: 1;
+}
+
+.home-package .packages-wrapper .card {
+    height: 26rem;
+}
+.home-package .packages-wrapper .card__side{
+    height: 26rem;
+}
+.client-mem.for-padding-top{
+    padding:2rem !important;
+}
+.client-mem.for-padding-top #signup_form{
+    width:90%;
+    margin:auto;
+}
+.home-package{
+    margin:6rem 0;
+}
+/* ============= HOME PACKAGE END=================== */
+
+
+
+
+
+
+
+/* ============= BACK TO TOP BUTTON =================== */
+.scroll-top {
+    width: 49px;
+    height: 43px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: none;
+    border: 2px solid #2D6D95;
+}
+
+.scroll-top i {
+    display: inline-block;
+    color: #2D6D95;
+
+}
+
+/* =================== SCROLL BAR ===================== */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #2D6D95;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f6f6f6;
+    border: 2px solid #343838;
+    border-radius: 30px;
+    height: 50px;
+
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  } */
+
+
+/* ======= MOBILE SCREEN SIDE NAV========== */
+.mobile-screen-nav {
+    display: none;
+}
+
+/* MOBILE SCREEN SIDE NAV */
+.mobile-screen-nav #main-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-screen-nav #title {
+    color: #f6f6f6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+}
+
+.mobile-screen-nav #btn {
+    position: fixed;
+    z-index: 5;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    -webkit-transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: left 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+.mobile-screen-nav #btn div {
+    width: 35px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: #1A1A1A;
+    -webkit-transition: -webkit-transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+    transition: transform 500ms cubic-bezier(0.6, 0.05, 0.28, 0.91), opacity 500ms, box-shadow 250ms, background-color 500ms;
+}
+
+.mobile-screen-nav #logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-screen-nav #logo-container {
+    /* background: #1A1A1A; */
+    width: 227px;
+    height: 129px;
+}
+
+.mobile-screen-nav #btn:hover>div {
+    box-shadow: 0 0 1px #00DFFC;
+}
+
+.mobile-screen-nav #btn.active {
+    left: 230px;
+}
+
+.mobile-screen-nav #btn.active div {
+    background-color: #343838;
+}
+
+.mobile-screen-nav #btn.active:hover>div {
+    box-shadow: 0 0 1px #343838;
+}
+
+.mobile-screen-nav #btn.active #top {
+    -webkit-transform: translateY(10px) rotate(-135deg);
+    -ms-transform: translateY(10px) rotate(-135deg);
+    transform: translateY(10px) rotate(-135deg);
+}
+
+.mobile-screen-nav #btn.active #middle {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.mobile-screen-nav #btn.active #bottom {
+    -webkit-transform: translateY(-10px) rotate(-45deg);
+    -ms-transform: translateY(-10px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.mobile-screen-nav #box {
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 0px;
+    left: -275px;
+    width: 275px;
+    opacity: 0;
+    padding: 20px 0px;
+    height: 100%;
+    background-color: #f6f6f6;
+    color: #343838;
+    -webkit-transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+    transition: all 350ms cubic-bezier(0.6, 0.05, 0.28, 0.91);
+}
+
+.mobile-screen-nav #box.active {
+    left: 0px;
+    opacity: 1;
+}
+
+.mobile-screen-nav #items {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mobile-screen-nav #items .item {
+    position: relative;
+    cursor: pointer;
+    font-size: 1.5em;
+    /* padding: 15px 30px; */
+    padding: 3px 30px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.mobile-screen-nav #items .item:hover {
+    padding: 15px 45px;
+    background-color: rgba(52, 56, 56, 0.2);
+}
+
+.mobile-screen-nav #items .item:hover.for-cstm-collapse {
+    padding: 15px 15px;
+}
+
+.mobile-screen-nav #items .item:hover.for-cstm-collapse .collapse ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+}
+
+.mobile-screen-nav #items .item .nav-link {
+    color: #2D6D95;
+    font-family: "Solway-Reg";
+}
+
+.mobile-screen-nav #items .item .nav-link.active {
+    color: #343838;
+
+}
+
+.mobile-screen-nav #items .btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .1rem;
+    background-color: transparent;
+    border: 0;
+    color: #2D6D95;
+    font-family: "Solway-Reg";
+    font-size: 1em;
+}
+
+.mobile-screen-nav #items .btn-toggle-nav li {
+    background-color: #2D6D95;
+}
+
+.mobile-screen-nav #items .btn-toggle-nav li a {
+    color: #F2F2F2;
+}
+
+.mobile-screen-nav #items .btn-toggle:hover,
+.mobile-screen-nav #items .btn-toggle:focus {
+    outline: none;
+    box-shadow: none;
+
+    /* background-color: #d2f4ea; */
+}
+
+.mobile-screen-nav #items .btn-toggle::before {
+    width: 1.0em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+}
+
+.mobile-screen-nav #items .btn-toggle[aria-expanded="true"] {
+    color: #2D6D95;
+}
+
+.mobile-screen-nav #items .btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+}
+
+.mobile-screen-nav #items .btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+    color: #2D6D95;
+    font-family: "Solway-Reg";
+}
+
+.scrollarea {
+    overflow-y: auto;
+}
+
+/* .mobile-screen-nav #items .dropdown-toggle::after {
+    display: inline-block;
+    width: .3em;
+    height: .3em;
+    margin: -.3em 0 0 .4em;
+    vertical-align: middle;
+    content: "";
+    border: .3em solid;
+    border-width: 0 .15em .15em 0;
+    transform: rotateZ(45deg)
+} */
+
+.mobile-screen-nav #items .dropdown-menu .dropdown-item {
+    font-family: "Solway-Reg";
+    color: #F2F2F2;
+}
+
+.mobile-screen-nav #items .dropdown-menu {
+    background-color: #2D6D95;
+    border: none;
+    z-index: 100;
+}
+
+.mobile-screen-nav #items .dropdown-menu .dropdown-item:hover {
+    background: #F2F2F2;
+    color: #2D6D95;
+}
+
+.mobile-screen-nav #social-items .item .nav-link {
+    /* background-color: #2D6D95; */
+    color: #F2F2F2;
+    background-color: #2D6D95;
+    border-radius: 40px;
+}
+
+.mobile-screen-nav #social-items .item .nav-link i.fa-facebook-f {
+    /* background-color: #2D6D95; */
+    color: #F2F2F2;
+    background-color: #2D6D95;
+    border-radius: 40px;
+    padding: 0px 4px;
+}
+
+/* ====================== HOME PAGE ======================== */
+/* ---------------------HEADER NAV */
+header .mynav .navbar {
+    background: #F2F2F2;
+}
+
+header .mynav .logo {
+    height: 80px;
+    width: 260px;
+    overflow: hidden;
+}
+
+.design_by:hover {
+    text-decoration: underline;
+}
+
+header .mynav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .mynav .nav-menu {
+    margin-left: 3rem;
+}
+
+header .mynav .nav-menu .nav-item .nav-link {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    /* background-color: aquamarine; */
+    /* margin-right: 15px; */
+}
+
+header .mynav .dropdown-toggle::after {
+    display: inline-block;
+    width: .3em;
+    height: .3em;
+    margin: -.3em 0 0 .4em;
+    vertical-align: middle;
+    content: "";
+    border: .3em solid;
+    border-width: 0 .15em .15em 0;
+    transform: rotateZ(45deg)
+}
+
+header .mynav .dropdown-menu .dropdown-item {
+    font-family: "Solway-Reg";
+    color: #F2F2F2;
+}
+
+header .mynav .dropdown-menu {
+    background-color: #2D6D95;
+    transition: all 0.5s;
+    border: none;
+}
+
+header .mynav .dropdown-menu:hover {
+    background-color: #2D6D95;
+}
+
+header .mynav .dropdown-menu .dropdown-item:hover {
+    background: #F2F2F2;
+    color: #2D6D95;
+}
+
+header .mynav .nav-menu .nav-item .nav-link.active {
+    color: #2D6D95;
+    /* background-color: chartreuse; */
+}
+
+header .mynav .social-icons a {
+    padding: 20px;
+    text-decoration: none;
+}
+
+header .mynav .social-icons i {
+    font-size: 27px;
+    color: #2D6D95;
+}
+
+.modal-dialog {
+    max-width: 1037px;
+}
+
+.modal-header {
+    background: #fff;
+}
+
+.modal-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: 0;
+}
+
+.close-button {
+    z-index: 1;
+    background: aliceblue;
+    right: 50px;
+    top: 30px;
+}
+
+
+/* -------------------- BANNER1 */
+.banner1 {
+    background-color: #F2F2F2;
+    height: 900px;
+}
+
+.banner1 .banner-img-1 {
+    top: 188px;
+    right: 16px;
+    width: 400px;
+
+}
+
+.banner1 .banner-img-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.banner1 .banner-text1 {
+    width: 589px;
+    height: auto;
+    top: 309px;
+    color: #2D6D95;
+    padding-left: 75px;
+}
+
+.banner1 .banner-text1 .h-1 {
+    font-size: 4.5rem;
+    font-family: "JA-Hand-Reg";
+}
+
+.banner1 .banner-text1 .btn-1 a button,
+.banner2 .banner2-text-btn1 button {
+    background-color: #5AE2D8;
+    color: #2D6D95;
+    font-family: "Solway-Bold";
+    border-radius: 13px;
+    font-size: 20px;
+}
+
+/* -------------------- MISSION STATEMENT ------------------*/
+.mission {
+    background-color: #F2F2F2;
+}
+
+.mission .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 7rem;
+}
+
+.mission .p-1 p {
+    color: #4D4D4D;
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+    font-size: 1.34rem;
+}
+
+/* -------------------- OUR TEAM ------------------*/
+.our-team {
+    /* background-color: aqua; */
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.our-team .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 7rem;
+}
+
+.team-mem,
+.client-mem {
+    background: linear-gradient(45deg, #ffffffcf, transparent);
+    border-radius: 50px;
+    border: 1px solid white;
+    /* background: rgb(255 255 255 / 38%); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+}
+
+.client-mem {
+    padding-bottom: 100px;
+}
+
+.team-mem .card {
+    width: 24.5rem;
+    border: none;
+    background-color: transparent;
+    /* transition: 0.2s all ease-in-out; */
+}
+
+.team-mem .card:hover {
+    /* transform: scale(1.1); */
+    background-color: #F2F2F2;
+    color: #2D6D95;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.team-mem .our-team-1 {
+    /* width: 243px;
+    height: 234px; */
+    width: 335px;
+    height: 321px;
+    margin: 0 auto;
+}
+
+.team-mem .our-team-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.team-mem .card-body .card-title,
+.team-mem .card-body .card-subtitle {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+}
+
+.team-mem .card-body .card-title h5 {
+    font-size: 3rem;
+}
+
+.team-mem .card-body .card-subtitle h6 {
+    font-size: 2rem;
+}
+
+.team-mem .card-body .btn-2 button {
+    background-color: #FFFFFF;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.team-mem .card-body .btn-2 button:hover {
+    background-color: #2D6D95;
+    color: #FFFFFF;
+}
+
+/* ------------------ LOCATION ----------- */
+.location {
+    background-color: #F2F2F2;
+    min-height: 762px;
+    overflow: hidden;
+}
+
+.location .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 7rem;
+    z-index: 1;
+}
+
+.location .circle-1 {
+    width: 456px;
+    left: -173px;
+    top: -92px;
+}
+
+.location .circle-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.location .circle-2 {
+    width: 456px;
+    right: -75px;
+    bottom: -248px;
+
+}
+
+.location .circle-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locations-card .card {
+    overflow: hidden;
+    border-radius: 30px;
+    border: none;
+}
+
+.locations-card .card .card-img {
+    height: 224px;
+}
+
+.locations-card .card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.locations-card .card .card-footer {
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    font-size: 21px;
+}
+
+/* --------------SWIPER SLIDER SLIDES PER VIEW */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    /* font-size: 18px;*/
+    /* background: rgb(83, 19, 19); */
+    /* background-color: #CF9455; */
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    position: unset;
+}
+
+.swiper-slide .card {
+    max-width: 100%;
+    transition: all .25s ease-out;
+    transform: scale(0.9);
+    transform-origin: center;
+}
+
+.swiper-slide-next .card {
+    transform: scale(1.1);
+}
+
+/* ------------- OUR CLIENTS -------------------- */
+.client-mem .client-img {
+    width: 400px;
+    height: 100%;
+}
+
+.client-mem .card {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.our-team .card .client-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-mem .card h5 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.client-mem .card p {
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    /* width: 318px; */
+    font-weight: 600;
+}
+
+.client-mem .card-body {
+    width: 345px;
+}
+
+.client-mem .card-body .btn-2 button {
+    background-color: #FFFFFF;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.our-team .curve-border {
+    top: 299px;
+    left: 554px;
+    height: 208px;
+}
+
+.our-team .curve-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.our-team .curve-border2 {
+    top: 746px;
+    left: 420px;
+    height: 159px;
+}
+
+.our-team .curve-border2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ----------------- CLIENTS RESOURCES --------- */
+.resources {
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+.resources-wrap {
+    min-height: 470px;
+}
+
+.resources .circles-3 {
+    right: -240px;
+}
+
+.resources .circles-3 img {
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resources .resource-text {
+    width: 491px;
+    z-index: 1;
+    top: 97px;
+    left: 40%;
+}
+
+.resources .resource-text h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.resources .resource-text p {
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.resource-text .resource-btn button {
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding: 9px 0px;
+    margin-right: 31px;
+    width: 170px;
+}
+
+.resources .plants-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resources .plants-4 {
+    width: 402px;
+    height: 435px;
+    top: 20px;
+}
+
+/* ----------------- CLINICAL RESOURCES --------- */
+.clinical-resources {
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.clinical-resources .h-1 h1 {
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+
+.clinical-resources .p-1 p {
+    color: #4D4D4D;
+    font-size: 1.4rem;
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+}
+
+.clinical-resources .circles-5 .agency {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 3rem;
+    width: 125px;
+    left: 71px;
+    top: 40px;
+}
+
+.clinical-resources .circles-5 .click {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 3rem;
+    /* width: 144px; */
+    left: 92px;
+    top: 165px;
+
+}
+
+.clinical-resources .circles-5 span a {
+    color: #2D6D95;
+    font-family: "Solway-Reg";
+    font-size: 1.0rem;
+
+}
+
+/* -------------- GET IN TOUCH ----------------*/
+.getin-touch {
+    background-color: #F2F2F2;
+    height: auto;
+}
+
+.getin-touch .circles-5 {
+    top: 122px;
+}
+
+.getin-touch .circles-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.getin-touch .therapist {
+    width: 355px;
+    height: 498px;
+    top: 160px;
+    left: 163px;
+    overflow: hidden;
+}
+
+.getin-touch .therapist img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px 107px 50px 50px;
+}
+
+.getin-touch .h-1 h1 {
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+
+.getin-touch .p-1 p {
+    color: #4D4D4D;
+    font-size: 1.4rem;
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+}
+
+/* ----FORM1 */
+.getin-touch .form1 input {
+    background: transparent;
+    border: 2px solid #4D4D4D;
+    border-radius: 14px;
+    width: 100%;
+
+}
+
+.getin-touch .form1 textarea {
+    background: transparent;
+    border: 2px solid #4D4D4D;
+    resize: none;
+    border-radius: 14px;
+    width: 100%;
+}
+
+.getin-touch .form1 input::placeholder,
+.getin-touch .form1 textarea::placeholder {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    padding-left: 20px;
+}
+
+.getin-touch .form1 input:focus,
+.getin-touch .form1 textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.getin-touch .getin-touch-btn button {
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding: 6px 28px;
+    font-size: 20px;
+}
+
+/* ---------- Accepted Therapy Border -----------  */
+.therapy-border img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .therapy-border .therapy-border-img{
+
+} */
+.therapy-border::before {
+    content: '';
+    position: absolute;
+    width: 39%;
+    height: 3px;
+    background-color: #2D6D95;
+    left: 19%;
+    bottom: 55px;
+    transform: translateX(-50%);
+}
+
+.therapy-border::after {
+    content: '';
+    position: absolute;
+    width: 38%;
+    height: 3px;
+    background-color: #2D6D95;
+    right: -19%;
+    bottom: 55px;
+    transform: translateX(-50%);
+}
+
+.accepted-therapy h1 {
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+    color: #2D6D95;
+}
+
+.therapy-logo {
+    background: #F2F2F2;
+}
+
+.therapy-logo .therapy-border-img {
+    /* background-color: #1A1A1A; */
+    width: 304px;
+    height: 90px;
+}
+
+/* .accepted-therapy .h-1::after{
+    content: '';
+    width: 100%;
+    border-bottom: solid 1px #4D4D4D;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+} */
+
+
+/* ------------------- FOOTER ------------------------- */
+footer {
+    background-color: #F2F2F2;
+    height: auto;
+}
+
+footer .first-col h5,
+footer .second-col h5,
+footer .third-col h5 {
+    font-family: "JA-Hand-Reg";
+    font-size: 2.5rem;
+    color: #2D6D95;
+}
+
+footer ul li .phone-img {
+    width: 29px;
+    height: 29px;
+}
+
+footer ul li .address-img {
+    /* background-color: aqua; */
+    width: 28px;
+    margin: auto;
+    /* width: 31px;
+    height: 32px; */
+}
+
+.book-recommend {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+footer ul li .phone-img img,
+footer ul li .address-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* footer .first-col ul li i,footer .second-col ul li i{
+    color: #2D6D95;
+    font-size: 1.5rem;
+} */
+footer .third-col ul li i {
+    color: #2D6D95;
+    font-size: 2rem;
+
+}
+
+footer .first-col ul li a,
+footer .second-col ul li a {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #808080;
+    text-decoration: none;
+}
+
+footer .copyright a {
+    text-decoration: none;
+    font-family: "Poppins-Light";
+    color: #4D4D4D;
+}
+
+/* ================================== MEET NIKKI PAGE =============================== */
+/* ----------------- BANNER2 ------------*/
+.banner2 {
+    background-color: #F2F2F2;
+    height: 670px;
+}
+
+.banner2-img {
+    width: 384px;
+    top: 133px;
+    /* height: 479px; */
+    height: 447px;
+    right: 0px;
+}
+
+.banner2-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.banner2 .banner2-text {
+    top: 219px;
+
+}
+
+.banner2 .banner2-text .h-1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 8rem;
+    line-height: 1;
+}
+
+.banner2 .banner2-text .h-1>span {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+
+}
+
+.banner2 .banner2-text .h-3 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* ---------------------- ABOUT NIKKI ------------ */
+.about-nikki {
+    background-color: #F2F2F2;
+    min-height: auto;
+
+}
+
+.about-nikki .wrapper {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 4%, rgba(178, 228, 227, 1) 56%, rgba(242, 242, 242, 1) 127%);
+    min-height: 597px;
+    border-radius: 76px;
+    width: 81%;
+}
+
+.about-nikki .education ul li,
+.about-nikki .specialties ul li {
+    color: #4D4D4D;
+    font-family: "Myraid-Pro";
+    font-size: 1.2rem;
+}
+
+.about-nikki .wrapper .h-5 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.about-nikki .wrapper .h-5 h3 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 2rem;
+}
+
+.about-nikki .wrapper .text-p1 p {
+    color: #4D4D4D;
+    font-family: "Myraid-Pro";
+    font-size: 1.2rem;
+}
+
+.wrapper .meet-nikki-btn1 button {
+    background-color: #FFFFFF;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding: 6px 28px;
+    font-size: 20px;
+}
+
+.about-nikki .wrapper .card-0 {
+    color: #fff;
+    background-image: url('../../assets/images/bg1.png');
+    position: relative;
+    margin-left: 70px;
+    border-radius: 10px;
+    height: 258px;
+}
+
+.about-nikki .wrapper .profile {
+    color: #000;
+    background-color: #F2F2F2;
+    position: absolute;
+    left: -70px;
+    width: 11.5rem;
+    top: 17%;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+.about-nikki .wrapper .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.about-nikki .wrapper .card-1 {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 2px solid #2D6D95;
+}
+
+.about-nikki .wrapper .card-1 h2 {
+    font-family: "Raleway-Roman-Reg";
+    color: #343838;
+    font-size: 1.5rem;
+}
+
+.about-nikki .wrapper .card-1 .spec {
+    width: 107px;
+    height: 50px;
+    background-color: #2D6D95;
+    top: -40px;
+    border-radius: 10px;
+    /* transform: translate(94px, 10px); */
+}
+
+.about-nikki .wrapper .card-1 .spec h3 {
+    color: #F2F2F2;
+    font-family: "JA-Hand-Reg";
+
+}
+
+/* .about-nikki .wrapper .open-quotes {
+    margin-left: 130px;
+    margin-top: 100px;
+} */
+
+.about-nikki .wrapper .content {
+    margin-left: 150px;
+    margin-right: 100px;
+    transform: translate(10px, 110px);
+}
+
+.about-nikki .wrapper .content i {
+    color: #F2F2F2;
+    font-size: 1.5rem;
+}
+
+/* .about-nikki .wrapper .close-quotes {
+     margin-bottom: 100px;
+    margin-right: 60px;
+} */
+
+/* ==================== SCHEDULING =============== */
+/* -------- BANNER3 --------- */
+.banner3 {
+    background: #F2F2F2;
+    height: 600px;
+}
+
+.banner3 .banner3-img {
+    transform: translateY(50%);
+    width: 450px;
+}
+
+.banner3 .banner3-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner3 .banner3-text {
+    transform: translateY(230px);
+}
+
+.banner3 .banner3-text .h-1 {
+    font-family: "JA-Hand-Reg";
+    font-size: 8rem;
+    color: #F2F2F2;
+}
+
+/* -------- NEW CLIENTS  --------- */
+.new-clients {
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: 1056px;
+    background-size: cover;
+    background-position: center;
+}
+
+.new-clients .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.new-clients .h-1 p {
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.new-clients .form2 {
+    width: 55%;
+}
+
+.new-clients .form2 input {
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+}
+
+.new-clients .form2 select {
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    padding-left: 28px;
+}
+
+.new-clients .form2 select option {
+    color: #4D4D4D;
+    font-family: "Solway-Reg";
+}
+
+.new-clients .form2 textarea {
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+    resize: none;
+}
+
+.new-clients .form2 input::placeholder,
+.new-clients .form2 textarea::placeholder {
+    color: #4D4D4D;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+}
+
+.new-clients .form2 input:focus,
+.new-clients .form2 textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.new-clients .form2 button {
+    background-color: #FFFFFF;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding: 6px 38px;
+    font-size: 20px;
+}
+
+/* -------- EXISTING CLIENTS  --------- */
+.existing-client {
+    background: #F2F2F2;
+    height: 513px;
+    overflow: hidden;
+}
+
+/* .existing-client .our-clients{
+} */
+.existing-client .circles-6 {
+    left: -173px;
+    top: 208px;
+}
+
+.existing-client .circles-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transform: scale(-1);
+    transform: scale(-1);
+}
+
+.existing-client .client-img {
+    width: 400px;
+    height: 100%;
+}
+
+.existing-client .card {
+    background: transparent;
+    border: none;
+    width: 100%;
+}
+
+.our-team .card .client-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.existing-client .card h5 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.existing-client .card p {
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    width: 408px;
+    font-weight: 600;
+}
+
+.existing-client .card-body {
+    width: 345px;
+}
+
+.existing-client .card-body .btn-2 button,
+.signin-wrap .form4 button,
+.forgot-wrap .form4 button {
+    background-color: #6ED6D3;
+    font-family: "Solway-Bold";
+    color: #2D6D95;
+    border-radius: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* ================================== MAKE A REFERRAL =============================== */
+.referral {
+    background-image: url('../../assets/images/bg1.png');
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.referral .h-1 h1 {
+    color: #2D6D95;
+    font-size: 5rem;
+    font-family: "JA-Hand-Reg";
+}
+
+.referral .h-1 p {
+    color: #1A1A1A;
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    /* width: 318px; */
+    font-weight: 600;
+}
+
+.referral .form3,
+.intake-main .intake-wrap .form3 {
+    width: 60%;
+}
+
+.referral .form3 button,
+.intake-main .intake-wrap .form3 button {
+    background: #F2F2F2;
+    color: #4D4D4D;
+    font-family: "Solway-Reg";
+    border-radius: 18px;
+    width: 100%;
+    text-align: left;
+}
+
+.referral .form3 button .download-img img,
+.intake-main .intake-wrap .form3 button .download-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.referral .form3 .download-img,
+.intake-main .intake-wrap .form3 .download-img {
+    width: 21px;
+    height: 24px;
+    float: right;
+}
+
+/* ========================== RESOURCES PAGE ==================== */
+/* ---------------INTAKE FORMS */
+.intake-main {
+    background-color: #F2F2F2;
+    padding-bottom: 130px;
+}
+
+.intake-main .intake-wrap {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 16%, rgba(178, 228, 227, 1) 47%, rgba(209, 235, 234, 1) 82%, rgba(242, 242, 242, 1) 110%);
+    height: 1710px;
+    border-radius: 76px;
+    width: 81%;
+}
+
+.intake-main .intake-wrap .h-1 h5,
+.signin-wrap .h-1 h5,
+.forgot-wrap .h-1 h5 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.intake-main .intake-wrap .h-1 p {
+    color: #1A1A1A;
+    font-family: "Myraid-Pro";
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+/* =======================CONTACT US PAGE ==================== */
+.contact {
+    height: 1020px;
+}
+
+/* ================================== SIGNIN FORM ============================= -->*/
+.siginin-main {
+    /* background-color: #FFFFFF; */
+    min-height: 593px;
+    /* margin-top: 101px; */
+}
+
+.siginin-main h5 {
+    z-index: 1;
+}
+
+.signin-wrap {
+    background: #F2F2F2;
+    border-radius: 50px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.corner-img1 {
+    width: 400px;
+    right: -158px;
+    top: -36px;
+}
+
+.corner-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.corner-img2 {
+    width: 400px;
+    left: -81px;
+    top: 380px;
+}
+
+.corner-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signin-wrap .form4 {
+    width: 55%;
+    padding-top: 100px;
+}
+
+.signin-wrap .form4 input {
+    background: #E6E6E6;
+    padding: 10px;
+    border-radius: 11px;
+    border: none;
+}
+
+.signin-wrap .form4 input::placeholder {
+    color: #1A1A1A;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+    font-weight: 600;
+}
+
+.signin-wrap .form4 input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.signin-wrap .form4 a {
+    color: #1A1A1A;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ======================= SIGN UP PAGE =================== */
+
+.signup-img1 {
+    width: 400px;
+    top: -77px;
+    left: -121px;
+    transform: rotate(316deg);
+
+}
+
+.signup-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-img2 {
+    width: 400px;
+    right: -169px;
+    top: 460px;
+    transform: rotate(322deg);
+}
+
+.signup-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======================= FORGOT PAGE =================== */
+.forgot-main {
+    background-color: #FFFFFF;
+    min-height: 593px;
+    margin-top: 101px;
+}
+
+.forgot-wrap {
+    background: rgb(110, 214, 211);
+    background: linear-gradient(180deg, rgba(110, 214, 211, 1) 16%, rgba(178, 228, 227, 1) 47%, rgba(209, 235, 234, 1) 82%, rgba(242, 242, 242, 1) 110%);
+    border-radius: 50px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.forgot-wrap .h-1 {
+    padding-top: 10rem;
+}
+
+.forgot-wrap .form4 {
+    width: 55%;
+    padding-top: 47px;
+}
+
+.forgot-wrap .form4 input {
+    background: transparent;
+    border: 2px solid #1A1A1A;
+    padding: 10px;
+    border-radius: 11px;
+
+}
+
+.forgot-wrap .form4 input::placeholder {
+    color: #666666;
+    font-family: "Solway-Reg";
+    padding-left: 18px;
+
+}
+
+.forgot-wrap .form4 input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.forgot-wrap .form4 button {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* ======================= MINIMALISTIC CARDS PAGE =================== */
+.min-cards h3 {
+    font-family: "JA-Hand-Reg";
+    font-size: 5rem;
+    color: #2D6D95;
+}
+
+.min-cards label {
+    width: 100%;
+    color: #2D6D95;
+    cursor: pointer;
+
+}
+
+.min-cards .card {
+    border: none;
+}
+
+.min-cards label.radio-btn input[type="radio"]:checked+.card {
+    border: 3px solid #2D6D95;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.min-cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.min-cards .card .min-card-text {
+    /* background-color: blueviolet; */
+    width: 100%;
+    /* transform: translateY(-160%); */
+    top: 30%;
+}
+
+.min-cards .card .min-card-text .h-1,
+.min-cards .card .min-card-text .p-1 {
+    font-family: "Verdana";
+    color: #2D6D95;
+}
+
+.corner-logo {
+    /* background-color: #1A1A1A; */
+    width: 121px;
+    height: 35px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.min-cards .pagination .page-item .page-link {
+    font-family: "JA-Hand-Reg";
+    font-size: 1.5rem;
+    color: #2D6D95;
+}
+
+.min-cards .pagination .page-item .page-link.active {
+    background: #2D6D95;
+    color: #F2F2F2;
+}
+
+/* ===============================Intake Forms PAGE==================================== */
+.forms {
+    background-color: #F2F2F2;
+    margin-top: 101px;
+}
+
+.form-intake {
+    background-image: url('../../assets/images/bg1.png');
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid black; */
+}
+
+.form-intake .therapy-border-img {
+    /* background: #1A1A1A; */
+    width: 294px;
+    height: 100px;
+}
+
+.form-intake img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-intake .therapy-border::before {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    background-color: #2D6D95;
+    left: 19%;
+    top: 74px;
+    transform: translateX(-50%);
+}
+
+.form-intake .therapy-border::after {
+    content: '';
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    background-color: #2D6D95;
+    right: -16%;
+    top: 74px;
+    transform: translateX(-50%);
+}
+
+.form-intake .form1 legend {
+    font-family: "JA-Hand-Reg";
+    font-size: 5rem;
+    color: #2D6D95;
+}
+
+.form-intake .form1 .form-fileds {
+    width: 90%;
+}
+
+.form-intake .form1 .form-fileds select,
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=email] {
+    width: 60%;
+    /* margin: 0 auto; */
+}
+
+.form-intake .form1 .form-fileds textarea,
+input[type=file] {
+    width: 60%;
+    /* margin: 0 auto; */
+}
+
+.form-intake .form1 h3 {
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.form-intake .form1 h5 {
+    font-family: "Raleway-Roman-Reg";
+    color: #2D6D95;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.form-intake .form1 input::placeholder {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-intake .form1 textarea {
+    resize: none;
+}
+
+.form-intake .form1 select {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-intake .form1 select option {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-intake .form1 textarea::placeholder {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-intake .form1 #ifTele {
+    display: none;
+}
+
+.form-intake .demo-graph select {
+    padding: 6px 20px;
+}
+
+.form-intake .demo-graph label {
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.form-intake label {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #4D4D4D;
+    margin-right: 45px;
+}
+
+.ul_tools li {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #4D4D4D;
+    margin-right: 45px;
+}
+
+.form-intake .form1 .label1 {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #4D4D4D;
+
+}
+
+.form-intake .form1 #ifYes {
+    display: none;
+}
+
+.form-intake .form1 .sub-head {
+    font-size: 3rem;
+    color: #212529;
+}
+
+.form-intake .sub-head::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #2D6D95;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 10px;
+    /* transform: translateX(-50%); */
+}
+
+.form-intake .form1 #sec-insured {
+    display: none;
+}
+
+.form-intake .form1 .form-check-label {
+    color: #666666;
+}
+
+.form-intake .form1 #other-symptom {
+    display: none;
+}
+
+.form-intake .form1 #other-symptom2 {
+    display: none;
+}
+
+.form-intake .form1 #taking-medi {
+    display: none;
+}
+
+.form-intake .form1 .for-more {
+    display: none;
+}
+
+.form-intake .form1 .sub-label {
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.form-intake .form1 #drugs-duration {
+    display: none;
+}
+
+.form-intake .form1 #domarr {
+    display: none;
+}
+
+.form-intake .form1 #other-sib {
+    display: none;
+}
+
+.from-btn button {
+    background-color: #2D6D95;
+    font-family: "Solway-Bold";
+    color: #F2F2F2;
+    padding: 5px 25px;
+}
+
+/* .form-intake #more-child{
+    display: none;
+} */
+/* ---------- Referral Form ----------- */
+.form-reff p {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    font-size: 1.2rem;
+}
+
+.form-reff .text-1 p>a {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+}
+
+.form-reff .text-right {
+    font-family: "Raleway-Roman-Reg";
+}
+
+footer .ref-footer .address-img {
+    width: 24px;
+    height: 31px;
+}
+
+footer .ref-footer i {
+    color: #2D6D95;
+    font-size: 1.7rem;
+}
+
+.payments-fields .para-input p {
+    font-family: "Solway-Reg";
+    color: #4D4D4D;
+    font-size: 1.2rem;
+}
+
+.para-input,
+.txt,
+.hide {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.para-input .txt {
+    border: none;
+    border-bottom: 2px solid #4D4D4D;
+    background-color: transparent;
+    border-radius: 0px;
+    color: inherit;
+    min-width: 225px;
+    max-width: 200px;
+}
+
+.para-input .hide {
+    display: none;
+    white-space: pre;
+}
+
+.para-input input[type="text"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.para-input input[type="date"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ============ NON-SECURE RELAESE PAGE =============== */
+.non-secure-fields .label-p a,
+.terminate p a,
+.term-consent .label-p a {
+    text-decoration: none;
+    color: #666666;
+}
+
+/* =========== Sliding-Secure-Forms =================== */
+.sliding-scale-form table td input[type="string"] {
+    padding: 30px;
+}
+
+.table thead {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #2d6d9594;
+    /* Choose your own color here */
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+    background-color: #F2F2F2 add;
+    /* Choose your own color here */
+}
+
+.form-btn .add-data button,
+.form-btn .remove-data button {
+    background-color: #2D6D95;
+    color: #F2F2F2;
+    font-family: "Solway-Reg";
+}
+
+.form-btn a button {
+    background-color: #2D6D95;
+    color: #F2F2F2;
+    font-family: "Solway-Reg";
+    min-width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.form-btn a button:hover {
+    color: #F2F2F2;
+}
+
+/* ------HouseHold Expenses ------ */
+.table-striped>tbody>tr:nth-child(even)>td label,
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder {
+    color: #2D6D95;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td label,
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"]::placeholder {
+    color: #F2F2F2;
+}
+
+.table-striped td input[id="other1"] {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td input[id="other1"] {
+    color: #F2F2F2;
+}
+
+/* =========== INFORMED CONSENT FORM PAGE ========================== */
+.consent-fields ul li {
+    font-family: "Poppins-Light";
+}
+
+.consent-fields .upper-alpha li {
+    list-style-type: upper-alpha;
+    font-family: "Solway-Bold";
+    font-size: 1.2rem;
+}
+
+.consent-fields .upper-roman li {
+    list-style-type: upper-roman;
+    font-family: "Solway-Reg";
+    font-size: 1rem;
+    color: #4D4D4D;
+}
+
+.consent-fields .signing-form .signature p::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #2D6D95;
+    right: -50%;
+    top: -3px;
+    transform: translateX(-50%);
+}
+
+/* ========== SIGNATURE BOX ========= */
+/* .sign-main{
+    width: 50%;
+} */
+.sign-main input {
+    width: 50%;
+}
+
+/* =================== LOCATION1 ==================== */
+.loc-banner .banner2-text-h1 .h-3 {
+    font-size: 4rem;
+}
+
+.loc-map {
+    background-color: #F2F2F2;
+}
+
+.loc-map .embed-responsive {
+    background-color: #F2F2F2;
+}
+
+.address-bar {
+    background-color: #F2F2F2;
+}
+
+.loc-map ul li a,
+.loc-map ul li a {
+    font-family: "Solway-Reg";
+    font-size: 1.2rem;
+    color: #808080;
+    text-decoration: none;
+}
+
+.loc-map ul li .phone-img {
+    width: 29px;
+    margin-right: 30px;
+
+}
+
+.loc-address ul li {
+    justify-content: end;
+}
+
+.loc-map ul li .address-img {
+    /* background-color: aqua; */
+    width: 24px;
+    margin-right: 30px;
+
+}
+
+.loc-map ul li .phone-img img,
+.loc-map ul li .address-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.loc-map .third-col ul li i {
+    color: #2D6D95;
+    font-size: 2rem;
+
+}
+
+/* <-- ================================== Mississippi Therapits =============================== --> */
+.missi-therapist {
+    background-color: #F2F2F2;
+}
+
+.missi-therapist .h-1 h1 {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 7rem;
+}
+
+.missi-therapist .team-mem,
+.missi-therapist .client-mem {
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    border: none;
+    background: linear-gradient(0deg, #F2F2F2, transparent);
+}
+
+.client-mem {
+    padding-bottom: 100px;
+}
+
+.team-mem .card {
+    width: 24.5rem;
+    border: none;
+    background-color: transparent;
+    /* transition: 0.2s all ease-in-out; */
+}
+
+.team-mem .card:hover {
+    /* transform: scale(1.1); */
+    background-color: #F2F2F2;
+    color: #2D6D95;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.team-mem .missi-therapist-1 {
+    /* width: 243px;
+    height: 234px; */
+    width: 335px;
+    height: 321px;
+    margin: 0 auto;
+}
+
+.team-mem .missi-therapist-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.team-mem .card-body .card-title,
+.team-mem .card-body .card-subtitle {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+}
+
+.team-mem .card-body .card-title h5 {
+    font-size: 3rem;
+}
+
+.team-mem .card-body .card-subtitle h6 {
+    font-size: 2rem;
+}
+
+/* ===================================================================================== */
+/* ************************************ MEDIA QUERIES ************************************ */
+/* ===================================================================================== */
+/* ================= Min Media Queries============================= */
+@media only screen and (min-width:1600px) {
+    .our-team .curve-border {
+        top: 299px;
+        left: 508px;
+        height: 236px;
+    }
+
+    .existing-client .our-clients {
+        overflow: hidden;
+    }
+
+    .resources-wrap {
+        overflow: hidden;
+    }
+
+    .resources .circles-3 {
+        right: -149px;
+    }
+
+}
+
+@media only screen and (min-width:1920px) {
+    footer ul li .phone-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    footer ul li .address-img {
+        width: 33px;
+        /* width: 46px;
+        height: 46px; */
+        margin: 3px;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+
+    /* ======== Scroll Top Button============ */
+    .scroll-top {
+        right: 646px;
+    }
+
+    .therapy-border::before {
+        width: 43%;
+        left: 21%;
+    }
+
+    .therapy-border::after {
+        width: 42%;
+        right: -21%;
+    }
+
+    footer ul li .phone-img {
+        width: 38px;
+        height: 37px;
+    }
+
+
+
+    .existing-client .our-clients {
+        overflow: hidden;
+    }
+
+    .resources-wrap {
+        overflow: hidden;
+    }
+
+    .resources .circles-3 {
+        right: -169px;
+    }
+}
+
+/* ===================  Max Media Queries ======================== */
+
+@media only screen and (max-width:1366px) {
+    .banner1 .banner-text1 {
+        width: 510px;
+        left: -48px;
+        padding-left: 0px;
+    }
+
+    .team-mem .card {
+        width: 20.5rem;
+    }
+
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
+
+    .our-team .curve-border {
+        left: 460px;
+    }
+
+    .our-team .curve-border2 {
+        left: 367px;
+        height: 143px;
+    }
+
+
+    .resources .circles-3 {
+        right: -193px;
+    }
+
+    /* ====== MINIMALISTIC CARDS ======= */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet;
+        transform: translateY(-140%);
+    } */
+}
+
+@media only screen and (max-width:1280px) {
+    .banner1 .banner-text1 {
+        width: 578px;
+        padding-left: 40px;
+    }
+
+    .banner1 .banner-img-1 {
+        right: -58px;
+        width: 666px;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .banner1 .banner-img-1 {
+        right: -28px;
+        width: 576px;
+        top: 140px;
+    }
+    .home-package .card.card-width {
+        width: 66%;
+    }
+
+    .banner1 .banner-text1 {
+        width: 430px;
+        top: 289px;
+    }
+
+    .banner1 .banner-text1 .h-1 {
+        font-size: 5.5rem;
+    }
+
+    .resources .resource-text {
+        width: 397px;
+        left: 45%;
+    }
+
+    .our-team .curve-border {
+        left: 431px;
+        height: 168px;
+    }
+
+    .our-team .curve-border2 {
+        left: 302px;
+        height: 117px;
+        top: 762px;
+    }
+
+    .therapy-border::before {
+        width: 34%;
+        left: 17%;
+    }
+
+    .therapy-border::after {
+        width: 32%;
+        right: -16%;
+    }
+
+    .getin-touch .circles-5 {
+        width: 450px;
+    }
+
+    .getin-touch .therapist {
+        width: 335px;
+        height: 454px;
+        top: 149px;
+        left: 106px;
+
+    }
+
+    .existing-client .circles-6 {
+        left: -239px;
+
+    }
+
+    /* ========== MINIMALISTIC CARDS ========== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet;
+        transform: translateY(-130%);
+    } */
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 0.7rem;
+    }
+
+    /* ==============INTAKE FORM PAGE ============== */
+    .form-intake .therapy-border::before {
+        width: 32%;
+        left: 17%;
+    }
+
+    .form-intake .therapy-border::after {
+        width: 32%;
+    }
+
+    /* =============== NIKKI PAGE ================= */
+    .banner2 {
+        height: 743px;
+    }
+
+    .banner2 .banner2-text {
+        top: 264px;
+    }
+
+    .banner2-img {
+        top: 187px;
+    }
+
+    .about-nikki .wrapper .content {
+        transform: translate(10px, 90px);
+    }
+
+    /* =========== FORGOT PASSWORD PAGE ============= */
+    .forgot-main {
+        margin-top: 172px;
+    }
+
+    .loc-address ul li {
+        justify-content: center;
+    }
+
+    .ph-number ul li {
+
+        justify-content: center;
+    }
+
+    .location-img {
+        width: 280px !important;
+        height: 350px !important;
+        top: 220px !important;
+        border-radius: 5px 10px 20px 30px;
+        right: 100px;
+    }
+}
+
+@media only screen and (max-width:820px) {
+    /* .logo2 img{
+        height: 60px !important;
+        width: 100%;
+    } */
+    .home-package .card.card-width{
+        width:54%;
+    }
+    .client-mem.for-padding-top{
+        padding-top:3rem;
+        margin-top:1.5rem;
+    }
+    .mobile-screen-nav #logo-container {
+        width: 180px;
+        height: 70px;
+        margin-left: 30px;
+    }
+
+    .member1-img.for-respnosive-img {
+        width: 330px;
+        height: 270px;
+        top: 100px;
+        right: 0;
+    }
+
+    .member1-img {
+        width: 250px;
+        height: 300px;
+        top: 80px;
+        right: 100px;
+    }
+
+    .location-img {
+        width: 250px !important;
+        height: 280px !important;
+        top: 90px !important;
+
+    }
+
+    /* ====== Mobile Nav ======= */
+    .mobile-screen-nav.for-mobile-navbar-color #items {
+        position: relative;
+        top: 26%;
+    }
+
+    .mobile-screen-nav #social-items {
+        margin-top: 40px;
+    }
+
+    /* ============== LOGO2 ============*/
+    .logo2 {
+        width: 230px;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .logo2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .main-logo2 ::before {
+        content: '';
+        position: absolute;
+        width: 33%;
+        height: 3px;
+        background-color: #2D6D95;
+        left: 10%;
+        top: 41px;
+        transform: translateX(-50%);
+    }
+
+    .main-logo2 ::after {
+        content: '';
+        position: absolute;
+        width: 33%;
+        height: 3px;
+        background-color: #2D6D95;
+        right: -23%;
+        top: 41px;
+        transform: translateX(-50%);
+    }
+
+    /* ============== Home ============ */
+    header .mynav .nav-menu {
+        margin-left: 0;
+    }
+
+    .lg-screen-navbar {
+        display: none;
+    }
+
+    .mobile-screen-nav {
+        display: block;
+        font-size: 16px;
+    }
+
+    .banner1 {
+        min-height: 817px;
+    }
+
+    .banner1 .banner-img-1 {
+        /* top: 295px; */
+        right: -47px;
+
+    }
+
+    .banner1 .banner-text1 {
+        top: 0px;
+        /* top: 186px; */
+        padding-left: 44px;
+        width: 522px;
+
+    }
+
+    .banner1 .banner-text1 .h-1 {
+        font-size: 4.3rem;
+    }
+
+    .locations-card .card .card-img {
+        height: 406px;
+    }
+
+    .client-mem .client-img {
+        width: 327px;
+    }
+
+    .our-team .curve-border {
+        top: 299px;
+        left: 305px;
+        height: 118px;
+    }
+
+    .our-team .curve-border2 {
+        top: 624px;
+        left: 200px;
+        height: 99px;
+    }
+
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
+
+    .resources .plants-4 {
+        width: 335px;
+        height: 365px;
+        top: 20px;
+        left: -17px;
+    }
+
+    .resources .resource-text {
+        width: 238px;
+        top: 59px;
+        left: 46%;
+    }
+
+    .resource-text .resource-btn button {
+        padding: 9px 0px;
+        margin-right: 19px;
+        width: 134px;
+    }
+
+    .team-mem .card {
+        width: 16.5rem;
+    }
+
+    .circles-5 {
+        justify-content: space-around;
+    }
+
+    .getin-touch .form-left {
+        display: none;
+    }
+
+    .therapy-border::before {
+        width: 32%;
+        left: 16%;
+        bottom: 44px;
+    }
+
+    .therapy-border::after {
+        width: 31%;
+        right: -15%;
+        bottom: 44px;
+    }
+
+    .therapy-logo .therapy-border-img {
+        /* background-color: #1A1A1A; */
+        width: 314px;
+        height: 73px;
+    }
+
+    footer ul li .address-img {
+        width: 25px;
+        /* width: 28px;
+        height: 37px; */
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    .swiper-slide {
+        padding: 70px 57px;
+    }
+
+    .swiper-slide-active .card {
+        /* background-color: red; */
+        transform: scale(1.2);
+    }
+
+    .swiper-slide-next .card {
+        /* background-color: rgb(0, 255, 128); */
+        transform: scale(.99);
+    }
+
+    /* =========MEET  NIKKI PAGE ======== */
+    .about-nikki .wrapper .text-p1 p {
+        text-align: justify;
+    }
+
+    .about-nikki .wrapper {
+        min-height: 787px;
+    }
+
+    .about-nikki .wrapper .card-1 {
+        margin-bottom: 63px;
+    }
+
+    .about-nikki .wrapper .content {
+        margin-right: 30px;
+        transform: translate(-9px, 63px);
+    }
+
+    .banner2 {
+        height: 483px;
+    }
+
+    .about-nikki {
+        min-height: 906px;
+    }
+
+    .banner2-img {
+        width: 325px;
+        height: 374px;
+        top: 47px;
+    }
+
+    .banner2 .banner2-text {
+        top: 97px;
+    }
+
+    .banner2 .banner2-text .h-1 {
+        font-size: 5rem;
+    }
+
+    /* ========== SCHEDULING PAGE =========== */
+    .banner3 {
+        height: 400px;
+    }
+
+    .banner3 .banner3-img {
+        bottom: -196px;
+    }
+
+    .banner3 .banner3-text {
+        bottom: -55px;
+    }
+
+    .new-clients .form2 {
+        width: 80%;
+    }
+
+    .existing-client {
+        height: 414px;
+    }
+
+    .existing-client .circles-6 {
+        left: -239px;
+        top: 160px;
+    }
+
+    .existing-client .client-img {
+        width: 285px;
+    }
+
+    .existing-client .card p {
+        width: 330px;
+    }
+
+    /* ============ MINIMALISTIC CARDS PAGE ======== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet; */
+    /* transform: translateY(-186%);
+    } */
+
+    .min-cards .card .min-card-text .h-1 {
+        font-family: "Verdana";
+        color: #2D6D95;
+        font-size: 50px;
+    }
+
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 30px;
+    }
+
+    /* =============== INTAKE FORM PAGE ========= */
+    .forms {
+        margin-top: 0px;
+    }
+
+    .form-intake .therapy-border-img {
+        width: 165px;
+        height: 95px;
+    }
+
+    .form-intake .form1 .form-fileds select,
+    input[type=text],
+    input[type=number],
+    input[type=date],
+    input[type=email] {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .form-intake .form1 .form-fileds textarea,
+    input[type=file] {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .form-intake .form1 legend {
+        font-size: 4rem;
+    }
+
+    /* =============== REFERRAL FORM ============== */
+    footer .ref-footer ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ======== FORMS TABLE ======== */
+    .forms-table {
+        overflow: scroll;
+    }
+
+    /* ======== INFORMED CONSENT FORM ======= */
+    .signing-form .sign-fields {
+        padding-bottom: 70px;
+    }
+
+    /* ========= Forms Signature box ====== */
+    .sign-main {
+        width: 100%;
+    }
+
+    /* ========= FORGOT PAGE====== */
+    .forgot-main {
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .banner1 .banner-img-1 {
+        /* top: 295px; */
+        right: -24px;
+
+    }
+
+    .banner1 .banner-text1 {
+        /* top: 152px; */
+    }
+
+    .client-mem .client-img {
+        width: 100%;
+    }
+
+    /* ============ RESOURCES ======= */
+    .intake-main .intake-wrap .form3 .download-img {
+        width: 22px;
+        height: 24px;
+    }
+
+    @media only screen and (max-width:600px) {
+
+        /* ============== Mobile Nav ============ */
+        .mobile-screen-nav #items {
+            top: 50%;
+        }
+
+        .corner-img2 {
+            top: 497px;
+        }
+
+        /* ============== LOGO 2 ============== */
+        .logo2 {
+            width: 177px;
+            /* height: 133px; */
+            height: 76px;
+        }
+
+        .main-logo2 ::before {
+            top: 36px;
+        }
+
+        .main-logo2 ::after {
+            top: 36px;
+        }
+
+        /* ============== Home ============ */
+        .banner1 {
+            height: 929px;
+        }
+
+        .resources-wrap {
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        .resources .resource-text {
+            width: 236px;
+            top: 267px;
+            left: 23%;
+        }
+
+        .resources .plants-4 {
+            width: 218px;
+            height: 236px;
+            top: 20px;
+            left: 9px;
+        }
+
+        .resource-btn {
+            justify-content: center;
+        }
+
+        .circles-5 {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+        }
+
+        .circles-5 .img-white {
+            margin: 27px;
+        }
+
+        .our-team .curve-border {
+            top: 584px;
+            left: 228px;
+            height: 137px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1247px;
+            left: 187px;
+            height: 99px;
+        }
+
+        .location {
+            min-height: 601px;
+        }
+
+        .locations-card .card {
+            border-radius: 31px;
+        }
+
+        .locations-card .card .card-img {
+            height: 192px;
+        }
+
+        .card-mobile {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .resources .resource-text {
+            top: 316px;
+        }
+
+        .resources-wrap {
+            min-height: 692px;
+        }
+
+        .therapy-border::before {
+            width: 27%;
+            left: 14%;
+            bottom: 36px;
+        }
+
+        .therapy-border::after {
+            width: 26%;
+            right: -13%;
+            bottom: 36px;
+        }
+
+        .therapy-border .therapy-border-img {
+            width: 177px;
+            height: 48px;
+        }
+
+        footer .row {
+            text-align: center;
+        }
+
+
+
+        .swiper-slide {
+            padding: 20px 10px;
+        }
+
+        .swiper-slide-active .card {
+            /* background-color: red; */
+            transform: scale(1.2);
+        }
+
+        .swiper-slide-next .card {
+            /* background-color: rgb(0, 255, 128); */
+            transform: scale(.99);
+        }
+
+        /* ========== MEET NIKKI PAGE ======== */
+        .about-nikki {
+            min-height: 1755px;
+        }
+
+        .about-nikki .wrapper {
+            min-height: 1656px;
+        }
+
+        .about-nikki .wrapper .text-p1 p {
+            text-align: center;
+        }
+
+        .about-nikki .wrapper .card-main {
+            padding: 50px 10px
+        }
+
+        .about-nikki .wrapper .card-1 h2 {
+            font-size: 1.2rem;
+        }
+
+        .about-nikki .wrapper .card-0 {
+            min-height: 400px;
+            margin-left: 0px;
+            width: 100%;
+        }
+
+        .about-nikki .wrapper .profile {
+            left: 34px;
+            width: 9.5rem;
+            top: -3%;
+        }
+
+        .about-nikki .wrapper .content {
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 70px;
+
+        }
+
+        .banner2 {
+            height: 319px;
+        }
+
+        .banner2 .banner2-text {
+            /* top: 253px; */
+        }
+
+        .banner2 .banner2-text .h-1 {
+            font-size: 3rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 2rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.6rem;
+        }
+
+        .banner2-img {
+            width: 177px;
+            height: 209px;
+            /* top: 222px; */
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 14px;
+        }
+
+        .banner3 .banner3-img {
+            transform: translateY(87%);
+            width: 355px;
+        }
+
+        .banner3 .banner3-text {
+            transform: translateY(275px);
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 7rem;
+        }
+
+        /* ========== SCHEDULING PAGE =========== */
+        .banner3 .banner3-img {
+            bottom: -72px;
+        }
+
+        .banner3 .banner3-text {
+            bottom: 16px;
+        }
+
+        .new-clients .form2 {
+            width: 100%;
+        }
+
+        .existing-client .client-img {
+            width: 232px;
+            height: 100%;
+        }
+
+        .existing-client {
+            height: 664px;
+        }
+
+        .existing-client .card-body {
+            text-align: center;
+            width: 281px;
+            margin: 0 auto;
+        }
+
+        .existing-client .circles-6 {
+            left: -173px;
+            top: 312px;
+        }
+
+        .existing-client .card-body .btn-2 button {
+            background-color: #2D6D95;
+            font-family: "Solway-Bold";
+            color: #6ED6D3;
+            border-radius: 13px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .existing-client .card p {
+            width: 255px;
+        }
+
+        /* ============ RESOURCES ============= */
+        .referral .form3,
+        .intake-main .intake-wrap .form3 {
+            width: 85%;
+        }
+
+        .intake-main .intake-wrap {
+            height: 2090px;
+            width: 90%;
+        }
+
+        /* ====== MINIMALISTIC CARDS ======= */
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 71px;
+        }
+
+        .min-cards .card .min-card-text .h-1 {
+            font-size: 40px;
+        }
+
+        .min-cards .card .min-card-text .p-1 {
+            font-size: 14px;
+        }
+
+        /* ========= intake form page ========== */
+        .form-intake .therapy-border::before {
+            width: 22%;
+            left: 13%;
+            top: 49px;
+        }
+
+        .form-intake .therapy-border::after {
+            width: 22%;
+            right: -10%;
+            top: 49px;
+        }
+
+        .form-intake .therapy-border-img {
+            width: 172px;
+            height: 52px;
+        }
+
+        .form-intake .form1 .form-fileds {
+            width: 100%;
+        }
+
+        .form-intake .form1 h3 {
+            font-size: 2.3rem;
+        }
+
+        /* ======== INFORMED CONSENT FORM ======= */
+        .signing-form .sign-fields {
+            padding-bottom: 70px;
+        }
+
+        /* ======== SIGNIN FORM PAGE ======= */
+
+        .signin-wrap .form4 {
+            width: 100%;
+        }
+
+        /* ========== SIGNUP FORM PAGE ======== */
+        .signup-head {
+            color: #6ED6D3 !important;
+            z-index: 1;
+        }
+
+        /* ========== FORGOT PASSWORD FORM PAGE ======= */
+        .forgot-main .form4 {
+            width: 100%;
+        }
+
+        .ph-number ul li {
+            justify-content: start;
+        }
+
+    }
+
+    @media only screen and (max-width:540px) {
+        .home-package .card.card-width{
+            width:90%;
+            height: 25.7rem;
+        }
+        .client-mem.for-padding-top {
+            padding-bottom: 3rem;
+        }
+        .home-package .card.card-width .card__side {
+            height: 25rem;
+        }
+        .client-mem.for-padding-top{
+            padding-top:3rem;
+            margin-top:1.5rem;
+        }
+        .client-mem.for-padding-top {
+            padding: 2rem 1rem !important;
+        }
+        .member1-img {
+            width: 160px;
+            height: 160px;
+            top: 90px;
+            right: 60px;
+        }
+        .mobile-screen-nav.for-mobile-navbar-color #items {
+            top: 36%;
+        }
+        /* .member1-img {
+            width: 140px !important;
+            height: 140px !important;
+            top: 90px !important;
+            right: 16px !important;
+        } */
+        .banner1 {
+            height: 630px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 308px;
+            right: 3px;
+            width: 338px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 222px;
+            padding-left: 53px;
+            width: 504px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.5rem;
+        }
+
+        .ph-number ul li {
+            justify-content: start;
+        }
+    }
+
+    @media only screen and (max-width:414px) {
+        .location-img.for-location-img {
+            width: 160px !important;
+            height: 200px !important;
+            right: 60px !important;
+        }
+
+        .mobile-screen-nav.for-mobile-navbar-color #items {
+            position: relative;
+            top: 31%;
+        }
+
+        .member1-img.for-respnosive-img {
+            width: 140px;
+            height: 160px;
+            top: 80px;
+            right: 20px;
+        }
+
+        .banner1 {
+            /* min-height: 951px; */
+            min-height: 733px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 256px;
+            /* top: 441px; */
+            right: 5px;
+            width: 411px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 42px;
+            /* top: 236px; */
+            width: 408px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.3rem;
+        }
+
+        .banner1 .banner-text1 {
+            padding-left: 69px;
+        }
+
+        .location-img {
+            width: 160px !important;
+            height: 200px !important;
+            top: 60px !important;
+        }
+
+        .location-img img {
+
+            border-bottom-right-radius: 50px !important;
+        }
+
+        footer ul li .address-img {
+            width: 41px;
+            /* width: 49px;
+            height: 32px; */
+        }
+
+        /* ========== resources ======= */
+        .intake-main .intake-wrap .form3 .download-img {
+            width: 22px;
+        }
+
+    }
+
+    @media only screen and (max-width:390px) {
+        .banner1 .banner-img-1 {
+            width: 363px;
+        }
+
+    }
+
+    @media only screen and (max-width:375px) {
+        .mobile-screen-nav #items {
+            top: 50%;
+        }
+
+        .client-mem .card-body {
+            width: 325px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button,
+        .banner2 .banner2-text-btn1 button {
+            font-size: 16px;
+        }
+
+        .locations-card .card .card-img {
+            height: 178px;
+        }
+
+        .swiper-slide-active .card {
+            /* background-color: red; */
+            transform: scale(1.1);
+        }
+
+        .our-team .curve-border {
+            top: 555px;
+            left: 218px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1192px;
+        }
+
+        /* ======meet nikki page ====== */
+        .about-nikki .wrapper .profile {
+            left: 17px;
+            top: -3%;
+        }
+
+        .banner2 .banner2-text .h-1 {
+            font-size: 2.7rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 1.6rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.5rem;
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 11px;
+        }
+
+        footer ul li .address-img {
+            width: 61px;
+            /* width: 63px;
+            height: 35px; */
+        }
+
+
+    }
+
+    @media only screen and (max-width:360px) {
+        .banner1 .banner-img-1 {
+            /* top: 506px; */
+            top: 336px;
+            right: 0px;
+            width: 293px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button {
+            font-size: 17px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.2rem;
+        }
+
+        .banner1 .banner-text1 {
+
+            width: 358px;
+        }
+
+        .client-mem .card-body {
+            width: 320px;
+        }
+
+        /* ========== MEET NIKKI PAGE ======= */
+
+        .banner2 {
+            /* height: 436px; */
+        }
+
+        .banner2 .banner2-text {
+            /* top: 259px; */
+        }
+
+        .banner2-img {
+            width: 163px;
+            height: 194px;
+            /* top: 224px; */
+        }
+
+        .our-team .curve-border {
+            top: 560px;
+            left: 205px;
+            height: 112px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1193px;
+            left: 187px;
+            height: 87px;
+        }
+
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 53px;
+        }
+
+        /* === Contact Us === */
+        .banner3 {
+            height: 487px;
+        }
+
+        .banner3 .banner3-img {
+            width: 318px;
+        }
+
+        .banner3 .banner3-text {
+            bottom: 57px;
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 5rem;
+        }
+
+        /* =========== FORM INTAKE PAGE =========== */
+        .form-intake .therapy-border-img {
+            width: 149px;
+            height: 52px;
+        }
+    }
+
+    @media only screen and (max-width:320px) {
+
+        .our-team .curve-border {
+            top: 543px;
+            left: 168px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1157px;
+            left: 135px;
+        }
+
+        .client-mem .card-body {
+            width: 260px;
+        }
+
+        .mobile-screen-nav #items {
+            position: relative;
+            top: 76%;
+        }
+
+        .about-nikki .wrapper .profile {
+            left: 12px;
+            width: 7.5rem;
+        }
+
+        .about-nikki .wrapper .content {
+            margin-left: 16px;
+            margin-right: -5px;
+            /* margin-top: 35px; */
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width:912px) {
+    .logo2 img {
+        display: none !important;
+    }
+
+}
+
+/* ====================== PAYMENT PAGE ========================= */
+.payment-wrapper {
+    background-image: url(../../assets/images/bg1.png);
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.payment-wrapper .card {
+    background-color: transparent;
+    border: 0px;
+}
+
+.payment-wrapper .card-title {
+    color: #2D6D95;
+    font-family: "JA-Hand-Reg";
+    font-size: 4rem;
+}
+
+.payment-wrapper label {
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.payment-wrapper label.cvv:hover {
+    cursor: pointer;
+}
+
+.payment-wrapper button {
+    background-color: #2D6D95;
+    font-family: "Solway-Bold";
+    color: #FFFFFF;
+    border-radius: 13px;
+    padding: 6px 38px;
+    font-size: 20px;
+}
+
+.payment-wrapper input:focus,
+.payment-wrapper select:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.payment-wrapper .headingTop {
+    font-family: "Raleway-Roman-Reg";
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.payment-wrapper .paymentMethod {
+    width: 76px;
+    height: 54px;
+}
+
+.payment-wrapper .paymentMethod.active {
+    outline: none !important;
+}
+
+.payment-wrapper .paymentMethod.active .method {
+    border-color: #4cd264;
+    outline: none !important;
+    box-shadow: 0px 3px 22px 0px #7b7b7b;
+
+}
+
+/* .payment-wrapper .paymentMethod .method {
+	position: absolute;
+	right: 3px;
+	top: 3px;
+	bottom: 3px;
+	left: 3px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+	transition: all 0.5s;
+} */
+
+.payment-wrapper .paymentMethod .method.visa {
+    background-image: url("data:image/png;base64,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");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+.payment-wrapper .paymentMethod .method.master-card {
+    background-image: url("data:image/png;base64,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");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.payment-wrapper .paymentMethod .method.amex {
+    background-image: url("http://www.paymentscardsandmobile.com/wp-content/uploads/2015/08/Amex-icon.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+/* .payment-wrapper .paymentMethod .method.vishwa {
+	background-image: url("http://i.imgur.com/VkiM7PL.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+} */
+.payment-wrapper .paymentMethod .method.paypal {
+    background-image: url("https://www.merchantmaverick.com/wp-content/uploads/2020/02/PayPal_Debit_Card.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* .payment-wrapper .paymentMethod .method:hover {
+	border-color: #4cd264;
+	outline: none !important;
+} */
+.payment-wrapper .paymentMethod.pay-p {
+    width: 82px;
+    height: 59px;
+}
+
+.payment-wrapper input[type=radio]:checked+.method {
+    border: 5px solid #2c6c94;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.paymentMethod:active {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* transition: 0.2s all ease-in-out; */
+}
+
+/* ============================= PACKAGES ===================== */
+.packages-wrapper {
+    min-height: 737px;
+}
+
+.packages-wrapper .card {
+    /* background-color: #FFFFFF; */
+}
+
+.packages-wrapper .heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+
+.packages-wrapper .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    -webkit-animation-name: moveInLeft;
+    animation-name: moveInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    /*
+          animation-delay: 3s;
+          animation-iteration-count: 3;
+          */
+}
+
+.packages-wrapper .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    -webkit-animation: moveInRight 1s ease-out;
+    animation: moveInRight 1s ease-out;
+}
+
+.packages-wrapper .heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: transparent;
+    letter-spacing: 0.2rem;
+    line-height: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #eee;
+}
+
+.packages-wrapper .btn,
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+
+}
+
+.deleteClass {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px;
+    width: 40px;
+    margin-top: 8px;
+    height: 40px;
+    border-radius: 0.5rem;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.packages-wrapper .btn:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.packages-wrapper .btn:hover::after {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.packages-wrapper .btn:active,
+.btn:focus {
+    outline: none;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.packages-wrapper .btn--white {
+    background-color: #fff;
+    color: #777;
+}
+
+.packages-wrapper .btn--white::after {
+    background-color: #fff;
+}
+
+.packages-wrapper .btn--green {
+    background: -webkit-gradient(linear, left top, right top, from(#fc466b), to(#3f5efb));
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    color: #fff;
+}
+
+.packages-wrapper .btn--green::after {
+    background-color: #55c57a;
+}
+
+.packages-wrapper .card {
+    -webkit-perspective: 150rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 35.7rem;
+}
+
+.packages-wrapper .card__side {
+    height: 35rem;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.packages-wrapper .card__side--front {
+    /* background-color: #fff; */
+}
+
+.packages-wrapper .card__side--front-1 {
+    background: linear-gradient(-45deg, #2c6c94, #6ed6d3, #ffffff);
+}
+
+.packages-wrapper .card__side--front-2 {
+    background: linear-gradient(-45deg, #2c6c94, #6ed6d3, #ffffff);
+}
+
+.packages-wrapper .card__side--front-3 {
+    background: linear-gradient(-45deg, #2c6c94, #6ed6d3, #ffffff);
+}
+
+.packages-wrapper .card__side--back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.packages-wrapper .card__side--back-1 {
+    background: linear-gradient(-45deg, #000, #00DFFC);
+}
+
+.packages-wrapper .card__side--back-2 {
+    background: linear-gradient(-45deg, #000, #00DFFC);
+}
+
+.packages-wrapper .card__side--back-3 {
+    background: linear-gradient(-45deg, #000, #00DFFC);
+}
+
+.packages-wrapper .card:hover .card__side--front-1,
+.packages-wrapper .card:hover .card__side--front-2,
+.packages-wrapper .card:hover .card__side--front-3 {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.packages-wrapper .card:hover .card__side--back {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.packages-wrapper input[type=radio]:checked+.card {
+    border: 5px solid #186ca2;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.packages-wrapper .card__side--back:active {
+    cursor: pointer;
+    transform: scale(1.1);
+    /* transition: 0.2s all ease-in-out; */
+}
+
+.packages-wrapper label {
+    font-family: "Raleway-Roman-Reg";
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.packages-wrapper .card__title {
+    /* height: 20rem; */
+    padding: 4rem 2rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.packages-wrapper .card__title--1 .fas {
+    font-size: 3rem;
+    color: #2c6c94;
+}
+
+.packages-wrapper .card__title--2 .fas {
+    font-size: 3rem;
+    color: #2c6c94;
+}
+
+.packages-wrapper .card__title--3 .fas {
+    font-size: 3rem;
+    color: #2c6c94;
+}
+
+.packages-wrapper .card__heading {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 75%;
+    font-family: "JA-Hand-Reg";
+    margin-top: 1rem;
+}
+
+.packages-wrapper .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.packages-wrapper .card__details {
+    padding: 0 2rem 2rem;
+    height: 298px;
+    font-family: "Solway-Reg";
+}
+
+.packages-wrapper .card__details ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.packages-wrapper .card__details ul li {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    display: flex;
+    /* background-color: #00DFFC; */
+}
+
+.packages-wrapper .card__details ul li .check-ico {
+    color: #ffffff;
+    margin-right: 15px;
+
+}
+
+.packages-wrapper .card__details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+.packages-wrapper .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.packages-wrapper .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem;
+}
+
+.packages-wrapper .card__price-only {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "JA-Hand-Reg";
+}
+
+.packages-wrapper .card__price-value {
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: "Solway-Bold";
+}
+
+.packages-wrapper .row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.packages-wrapper .row:not(:last-child) {
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.packages-wrapper .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.packages-wrapper .row [class^="col-"] {
+    float: left;
+}
+
+.packages-wrapper .row [class^="col-"]:not(:last-child) {
+    /* margin-right: 6rem; */
+}
+
+.packages-wrapper .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3);
+}
+
+/* ===================================================================================== */
+/* ************************************ MEDIA QUERIES ************************************ */
+/* ===================================================================================== */
+/* ================= Min Media Queries============================= */
+@media only screen and (min-width:1600px) {
+    .our-team .curve-border {
+        top: 299px;
+        left: 508px;
+        height: 236px;
+    }
+
+    .existing-client .our-clients {
+        overflow: hidden;
+    }
+
+    .resources-wrap {
+        overflow: hidden;
+    }
+
+    .resources .circles-3 {
+        right: -149px;
+    }
+
+}
+
+@media only screen and (min-width:1920px) {
+    footer ul li .phone-img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    footer ul li .address-img {
+        width: 33px;
+        /* width: 46px;
+        height: 46px; */
+        margin: 3px;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+
+    /* ======== Scroll Top Button============ */
+    .scroll-top {
+        right: 646px;
+    }
+
+    .therapy-border::before {
+        width: 43%;
+        left: 21%;
+    }
+
+    .therapy-border::after {
+        width: 42%;
+        right: -21%;
+    }
+
+    footer ul li .phone-img {
+        width: 38px;
+        height: 37px;
+    }
+
+
+
+    .existing-client .our-clients {
+        overflow: hidden;
+    }
+
+    .resources-wrap {
+        overflow: hidden;
+    }
+
+    .resources .circles-3 {
+        right: -169px;
+    }
+}
+
+/* ===================  Max Media Queries ======================== */
+
+@media only screen and (max-width:1366px) {
+    .banner1 .banner-text1 {
+        width: 510px;
+        left: -48px;
+        padding-left: 0px;
+    }
+
+    .team-mem .card {
+        width: 20.5rem;
+    }
+
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
+
+    .our-team .curve-border {
+        left: 460px;
+    }
+
+    .our-team .curve-border2 {
+        left: 367px;
+        height: 143px;
+    }
+
+
+    .resources .circles-3 {
+        right: -193px;
+    }
+
+    /* ====== MINIMALISTIC CARDS ======= */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet;
+        transform: translateY(-140%);
+    } */
+}
+
+@media only screen and (max-width:1280px) {
+    .banner1 .banner-text1 {
+        width: 578px;
+        padding-left: 40px;
+    }
+
+    .banner1 .banner-img-1 {
+        right: -58px;
+        width: 666px;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+    /* for-container-height */
+    .intake-main .intake-wrap.for-container-cstm-responsive-height {
+        height: fit-content;
+        padding-bottom: 1rem;
+    }
+
+
+
+    /* for-container-height */
+    .banner1 .banner-img-1 {
+        right: -28px;
+        width: 576px;
+        top: 140px;
+    }
+
+    .banner1 .banner-text1 {
+        width: 430px;
+        top: 289px;
+    }
+
+    .banner1 .banner-text1 .h-1 {
+        font-size: 5.5rem;
+    }
+
+    .resources .resource-text {
+        width: 397px;
+        left: 45%;
+    }
+
+    .our-team .curve-border {
+        left: 431px;
+        height: 168px;
+    }
+
+    .our-team .curve-border2 {
+        left: 302px;
+        height: 117px;
+        top: 762px;
+    }
+
+    .therapy-border::before {
+        width: 34%;
+        left: 17%;
+    }
+
+    .therapy-border::after {
+        width: 32%;
+        right: -16%;
+    }
+
+    .getin-touch .circles-5 {
+        width: 450px;
+    }
+
+    .getin-touch .therapist {
+        width: 335px;
+        height: 454px;
+        top: 149px;
+        left: 106px;
+
+    }
+
+    .existing-client .circles-6 {
+        left: -239px;
+
+    }
+
+    /* ========== MINIMALISTIC CARDS ========== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet;
+        transform: translateY(-130%);
+    } */
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 0.7rem;
+    }
+
+    /* ==============INTAKE FORM PAGE ============== */
+    .form-intake .therapy-border::before {
+        width: 32%;
+        left: 17%;
+    }
+
+    .form-intake .therapy-border::after {
+        width: 32%;
+    }
+
+    /* =============== NIKKI PAGE ================= */
+    .banner2 {
+        height: 743px;
+    }
+
+    .banner2 .banner2-text {
+        top: 264px;
+    }
+
+    .banner2-img {
+        top: 187px;
+    }
+
+    .about-nikki .wrapper .content {
+        transform: translate(10px, 90px);
+    }
+
+    /* =========== FORGOT PASSWORD PAGE ============= */
+    .forgot-main {
+        margin-top: 172px;
+    }
+
+    .loc-address ul li {
+        justify-content: center;
+    }
+
+    .ph-number ul li {
+
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:820px) {
+
+    /* ====== Mobile Nav ======= */
+    .mobile-screen-nav #items {
+        position: relative;
+        top: 31%;
+    }
+
+    .mobile-screen-nav #social-items {
+        margin-top: 40px;
+    }
+
+    /* ============== LOGO2 ============*/
+
+
+    /* .main-logo2 ::before {
+        content: '';
+        position: absolute;
+        width: 33%;
+        height: 3px;
+        background-color: #2D6D95;
+        left: 10%;
+        top: 74px;
+        transform: translateX(-50%);
+    }
+
+    .main-logo2 ::after {
+        content: '';
+        position: absolute;
+        width: 33%;
+        height: 3px;
+        background-color: #2D6D95;
+        right: -23%;
+        top: 74px;
+        transform: translateX(-50%);
+    } */
+
+    /* ============== Home ============ */
+    header .mynav .nav-menu {
+        margin-left: 0;
+    }
+
+    .lg-screen-navbar {
+        display: none;
+    }
+
+    .mobile-screen-nav {
+        display: block;
+        font-size: 16px;
+    }
+
+    .banner1 {
+        min-height: 817px;
+    }
+
+    .banner1 .banner-img-1 {
+        /* top: 295px; */
+        right: -47px;
+
+    }
+
+    .banner1 .banner-text1 {
+        top: 0px;
+        /* top: 186px; */
+        padding-left: 44px;
+        width: 522px;
+
+    }
+
+    .banner1 .banner-text1 .h-1 {
+        font-size: 4.3rem;
+    }
+
+    .locations-card .card .card-img {
+        height: 406px;
+    }
+
+    .client-mem .client-img {
+        width: 327px;
+    }
+
+    .our-team .curve-border {
+        top: 299px;
+        left: 305px;
+        height: 118px;
+    }
+
+    .our-team .curve-border2 {
+        top: 624px;
+        left: 200px;
+        height: 99px;
+    }
+
+    .team-mem .our-team-1 {
+        width: 243px;
+        height: 234px;
+    }
+
+    .resources .plants-4 {
+        width: 335px;
+        height: 365px;
+        top: 20px;
+        left: -17px;
+    }
+
+    .resources .resource-text {
+        width: 238px;
+        top: 59px;
+        left: 46%;
+    }
+
+    .resource-text .resource-btn button {
+        padding: 9px 0px;
+        margin-right: 19px;
+        width: 134px;
+    }
+
+    .team-mem .card {
+        width: 16.5rem;
+    }
+
+    .circles-5 {
+        justify-content: space-around;
+    }
+
+    .getin-touch .form-left {
+        display: none;
+    }
+
+    .therapy-border::before {
+        width: 32%;
+        left: 16%;
+        bottom: 44px;
+    }
+
+    .therapy-border::after {
+        width: 31%;
+        right: -15%;
+        bottom: 44px;
+    }
+
+    .therapy-logo .therapy-border-img {
+        /* background-color: #1A1A1A; */
+        width: 314px;
+        height: 73px;
+    }
+
+    footer ul li .address-img {
+        width: 25px;
+        /* width: 28px;
+        height: 37px; */
+    }
+
+    footer .row {
+        text-align: center;
+    }
+
+    .swiper-slide {
+        padding: 70px 57px;
+    }
+
+    .swiper-slide-active .card {
+        /* background-color: red; */
+        transform: scale(1.2);
+    }
+
+    .swiper-slide-next .card {
+        /* background-color: rgb(0, 255, 128); */
+        transform: scale(.99);
+    }
+
+    /* =========MEET  NIKKI PAGE ======== */
+    .about-nikki .wrapper .text-p1 p {
+        text-align: justify;
+    }
+
+    .about-nikki .wrapper {
+        min-height: 787px;
+    }
+
+    .about-nikki .wrapper .card-1 {
+        margin-bottom: 63px;
+    }
+
+    .about-nikki .wrapper .content {
+        margin-right: 30px;
+        transform: translate(-9px, 63px);
+    }
+
+    .banner2 {
+        height: 483px;
+    }
+
+    .about-nikki {
+        min-height: 906px;
+    }
+
+    .banner2-img {
+        width: 325px;
+        height: 374px;
+        top: 47px;
+    }
+
+    .banner2 .banner2-text {
+        top: 97px;
+    }
+
+    .banner2 .banner2-text .h-1 {
+        font-size: 5rem;
+    }
+
+    /* ========== SCHEDULING PAGE =========== */
+    .banner3 {
+        height: 400px;
+    }
+
+    .banner3 .banner3-img {
+        bottom: -196px;
+    }
+
+    .banner3 .banner3-text {
+        bottom: -55px;
+    }
+
+    .new-clients .form2 {
+        width: 80%;
+    }
+
+    .existing-client {
+        height: 414px;
+    }
+
+    .existing-client .circles-6 {
+        left: -239px;
+        top: 160px;
+    }
+
+    .existing-client .client-img {
+        width: 285px;
+    }
+
+    .existing-client .card p {
+        width: 330px;
+    }
+
+    /* ============ MINIMALISTIC CARDS PAGE ======== */
+    /* .min-cards .card .min-card-text {
+        /* background-color: blueviolet; */
+    /* transform: translateY(-186%);
+    } */
+
+    .min-cards .card .min-card-text .h-1 {
+        font-family: "Verdana";
+        color: #2D6D95;
+        font-size: 50px;
+    }
+
+    .min-cards .card .min-card-text .p-1 {
+        font-size: 30px;
+    }
+
+    /* =============== INTAKE FORM PAGE ========= */
+    .forms {
+        margin-top: 0px;
+    }
+
+    .form-intake .therapy-border-img {
+        width: 165px;
+        height: 95px;
+    }
+
+    .form-intake .form1 .form-fileds select,
+    input[type=text],
+    input[type=number],
+    input[type=date],
+    input[type=email] {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .form-intake .form1 .form-fileds textarea,
+    input[type=file] {
+        width: 100%;
+        /* margin: 0 auto; */
+    }
+
+    .form-intake .form1 legend {
+        font-size: 4rem;
+    }
+
+    /* =============== REFERRAL FORM ============== */
+    footer .ref-footer ul li {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ======== FORMS TABLE ======== */
+    .forms-table {
+        overflow: scroll;
+    }
+
+    /* ======== INFORMED CONSENT FORM ======= */
+    .signing-form .sign-fields {
+        padding-bottom: 70px;
+    }
+
+    /* ========= Forms Signature box ====== */
+    .sign-main {
+        width: 100%;
+    }
+
+    /* ========= FORGOT PAGE====== */
+    .forgot-main {
+        margin-top: 0px;
+    }
+    .about-nikki .wrapper .card-0 {
+        height: 270px;
+    }
+    .about-nikki .wrapper .text-p1 p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .banner1 .banner-img-1 {
+        /* top: 295px; */
+        right: -24px;
+
+    }
+
+    .banner1 .banner-text1 {
+        /* top: 152px; */
+    }
+
+    .client-mem .client-img {
+        width: 100%;
+    }
+
+    /* ============ RESOURCES ======= */
+    .intake-main .intake-wrap .form3 .download-img {
+        width: 22px;
+        height: 24px;
+    }
+
+    @media only screen and (max-width:600px) {
+
+        /* ============== Mobile Nav ============ */
+        .mobile-screen-nav #items {
+            top: 50%;
+        }
+
+        .corner-img2 {
+            top: 497px;
+        }
+
+        /* ============== LOGO 2 ============== */
+        .logo2 {
+            width: 177px;
+            /* height: 133px; */
+            height: 76px;
+        }
+
+        .main-logo2 ::before {
+            top: 36px;
+        }
+
+        .main-logo2 ::after {
+            top: 36px;
+        }
+
+        /* ============== Home ============ */
+        .banner1 {
+            height: 929px;
+        }
+
+        .resources-wrap {
+            min-height: 600px;
+            overflow: hidden;
+        }
+
+        .resources .resource-text {
+            width: 236px;
+            top: 267px;
+            left: 23%;
+        }
+
+        .resources .plants-4 {
+            width: 218px;
+            height: 236px;
+            top: 20px;
+            left: 9px;
+        }
+
+        .resource-btn {
+            justify-content: center;
+        }
+
+        .circles-5 {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+        }
+
+        .circles-5 .img-white {
+            margin: 27px;
+        }
+
+        .our-team .curve-border {
+            top: 584px;
+            left: 228px;
+            height: 137px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1247px;
+            left: 187px;
+            height: 99px;
+        }
+
+        .location {
+            min-height: 601px;
+        }
+
+        .locations-card .card {
+            border-radius: 31px;
+        }
+
+        .locations-card .card .card-img {
+            height: 192px;
+        }
+
+        .card-mobile {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .resources .resource-text {
+            top: 316px;
+        }
+
+        .resources-wrap {
+            min-height: 692px;
+        }
+
+        .therapy-border::before {
+            width: 27%;
+            left: 14%;
+            bottom: 36px;
+        }
+
+        .therapy-border::after {
+            width: 26%;
+            right: -13%;
+            bottom: 36px;
+        }
+
+        .therapy-border .therapy-border-img {
+            width: 177px;
+            height: 48px;
+        }
+
+        footer .row {
+            text-align: center;
+        }
+
+
+
+        .swiper-slide {
+            padding: 20px 10px;
+        }
+
+        .swiper-slide-active .card {
+            /* background-color: red; */
+            transform: scale(1.2);
+        }
+
+        .swiper-slide-next .card {
+            /* background-color: rgb(0, 255, 128); */
+            transform: scale(.99);
+        }
+
+        /* ========== MEET NIKKI PAGE ======== */
+        .about-nikki {
+            min-height: 1755px;
+        }
+
+        .about-nikki .wrapper {
+            min-height: 1656px;
+        }
+
+        .about-nikki .wrapper .text-p1 p {
+            text-align: center;
+        }
+
+        .about-nikki .wrapper .card-main {
+            padding: 50px 10px
+        }
+
+        .about-nikki .wrapper .card-1 h2 {
+            font-size: 1.2rem;
+        }
+
+        .about-nikki .wrapper .card-0 {
+            min-height: 400px;
+            margin-left: 0px;
+            width: 100%;
+        }
+
+        .about-nikki .wrapper .profile {
+            left: 34px;
+            width: 9.5rem;
+            top: -3%;
+        }
+
+        .about-nikki .wrapper .content {
+            margin-left: 30px;
+            margin-right: 10px;
+            margin-top: 70px;
+
+        }
+
+        .banner2 {
+            height: 319px;
+        }
+
+        .banner2 .banner2-text {
+            /* top: 253px; */
+        }
+
+        .banner2 .banner2-text .h-1 {
+            font-size: 3rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 2rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.6rem;
+        }
+
+        .banner2-img {
+            width: 177px;
+            height: 209px;
+            /* top: 222px; */
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 14px;
+        }
+
+        .banner3 .banner3-img {
+            transform: translateY(87%);
+            width: 355px;
+        }
+
+        .banner3 .banner3-text {
+            transform: translateY(275px);
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 7rem;
+        }
+
+        /* ========== SCHEDULING PAGE =========== */
+        .banner3 .banner3-img {
+            bottom: -72px;
+        }
+
+        .banner3 .banner3-text {
+            bottom: 16px;
+        }
+
+        .new-clients .form2 {
+            width: 100%;
+        }
+
+        .existing-client .client-img {
+            width: 232px;
+            height: 100%;
+        }
+
+        .existing-client {
+            height: 664px;
+        }
+
+        .existing-client .card-body {
+            text-align: center;
+            width: 281px;
+            margin: 0 auto;
+        }
+
+        .existing-client .circles-6 {
+            left: -173px;
+            top: 312px;
+        }
+
+        .existing-client .card-body .btn-2 button {
+            background-color: #2D6D95;
+            font-family: "Solway-Bold";
+            color: #6ED6D3;
+            border-radius: 13px;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .existing-client .card p {
+            width: 255px;
+        }
+
+        /* ============ RESOURCES ============= */
+        .referral .form3,
+        .intake-main .intake-wrap .form3 {
+            width: 85%;
+        }
+
+        .intake-main .intake-wrap {
+            height: 2090px;
+            width: 90%;
+        }
+
+        /* ====== MINIMALISTIC CARDS ======= */
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 71px;
+        }
+
+        .min-cards .card .min-card-text .h-1 {
+            font-size: 40px;
+        }
+
+        .min-cards .card .min-card-text .p-1 {
+            font-size: 14px;
+        }
+
+        /* ========= intake form page ========== */
+        .form-intake .therapy-border::before {
+            width: 22%;
+            left: 13%;
+            top: 49px;
+        }
+
+        .form-intake .therapy-border::after {
+            width: 22%;
+            right: -10%;
+            top: 49px;
+        }
+
+        .form-intake .therapy-border-img {
+            width: 172px;
+            height: 52px;
+        }
+
+        .form-intake .form1 .form-fileds {
+            width: 100%;
+        }
+
+        .form-intake .form1 h3 {
+            font-size: 2.3rem;
+        }
+
+        /* ======== INFORMED CONSENT FORM ======= */
+        .signing-form .sign-fields {
+            padding-bottom: 70px;
+        }
+
+        /* ======== SIGNIN FORM PAGE ======= */
+
+        .signin-wrap .form4 {
+            width: 100%;
+        }
+
+        /* ========== SIGNUP FORM PAGE ======== */
+        .signup-head {
+            color: #6ED6D3 !important;
+            z-index: 1;
+        }
+
+        /* ========== FORGOT PASSWORD FORM PAGE ======= */
+        .forgot-main .form4 {
+            width: 100%;
+        }
+
+        .ph-number ul li {
+            justify-content: start;
+        }
+
+    }
+
+    @media only screen and (max-width:540px) {
+        .address-img.faq-img img {
+            width: 60% !important;
+        }
+
+        .about-nikki .wrapper .card-0.for-container-cstm-responsive-height {
+            height: fit-content;
+            padding-bottom: 5rem;
+            min-height: fit-content;
+        }
+
+        .about-nikki .wrapper .for-container-cstm-responsive-height .content {
+            margin-top: 90px;
+        }
+
+        .banner1 {
+            height: 630px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 308px;
+            right: 3px;
+            width: 338px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 222px;
+            padding-left: 53px;
+            width: 504px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.5rem;
+        }
+
+        .ph-number ul li {
+            justify-content: start;
+        }
+    }
+
+    @media only screen and (max-width:414px) {
+        .for-remove-padding-ul ul {
+            padding-left: 0rem;
+        }
+
+        .banner1 {
+            /* min-height: 951px; */
+            min-height: 733px;
+        }
+
+        .banner1 .banner-img-1 {
+            top: 256px;
+            /* top: 441px; */
+            right: 5px;
+            width: 411px;
+        }
+
+        .banner1 .banner-text1 {
+            top: 42px;
+            /* top: 236px; */
+            width: 408px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.3rem;
+        }
+
+        .banner1 .banner-text1 {
+            padding-left: 69px;
+        }
+
+        footer ul li .address-img {
+            width: 41px;
+            /* width: 49px;
+            height: 32px; */
+        }
+
+        /* ========== resources ======= */
+        .intake-main .intake-wrap .form3 .download-img {
+            width: 22px;
+        }
+
+    }
+
+    @media only screen and (max-width:390px) {
+        .banner1 .banner-img-1 {
+            width: 363px;
+        }
+    }
+
+    @media only screen and (max-width:375px) {
+        .mobile-screen-nav.for-mobile-navbar-color #items {
+            position: relative;
+            top: 36%;
+        }
+
+        .mobile-screen-nav #items {
+            top: 50%;
+        }
+
+        .address-img.faq-img img {
+            width: 44% !important;
+        }
+
+        .client-mem .card-body {
+            width: 325px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button,
+        .banner2 .banner2-text-btn1 button {
+            font-size: 16px;
+        }
+
+        .locations-card .card .card-img {
+            height: 178px;
+        }
+
+        .swiper-slide-active .card {
+            /* background-color: red; */
+            transform: scale(1.1);
+        }
+
+        .our-team .curve-border {
+            top: 555px;
+            left: 218px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1192px;
+        }
+
+        /* ======meet nikki page ====== */
+        .about-nikki .wrapper .profile {
+            left: 17px;
+            top: -3%;
+        }
+
+        .banner2 .banner2-text .h-1 {
+            font-size: 2.7rem;
+        }
+
+        .banner2 .banner2-text .h-1>span {
+            font-size: 1.6rem;
+        }
+
+        .banner2 .banner2-text .h-3 {
+            font-size: 1.5rem;
+        }
+
+        .banner2 .banner2-text-btn1 button {
+            font-size: 11px;
+        }
+
+        footer ul li .address-img {
+            width: 61px;
+            /* width: 63px;
+            height: 35px; */
+        }
+
+
+    }
+
+    @media only screen and (max-width:360px) {
+        .banner1 .banner-img-1 {
+            /* top: 506px; */
+            top: 336px;
+            right: 0px;
+            width: 293px;
+        }
+
+        .banner1 .banner-text1 .btn-1 a button {
+            font-size: 17px;
+        }
+
+        .banner1 .banner-text1 .h-1 {
+            font-size: 3.2rem;
+        }
+
+        .banner1 .banner-text1 {
+
+            width: 358px;
+        }
+
+        .client-mem .card-body {
+            width: 320px;
+        }
+
+        /* ========== MEET NIKKI PAGE ======= */
+
+        .banner2 {
+            /* height: 436px; */
+        }
+
+        .banner2 .banner2-text {
+            /* top: 259px; */
+        }
+
+        .banner2-img {
+            width: 163px;
+            height: 194px;
+            /* top: 224px; */
+        }
+
+        .our-team .curve-border {
+            top: 560px;
+            left: 205px;
+            height: 112px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1193px;
+            left: 187px;
+            height: 87px;
+        }
+
+        .min-cards .card .min-card-text {
+            /* background-color: blueviolet; */
+            /* transform: translateY(-130%); */
+            top: 53px;
+        }
+
+        /* === Contact Us === */
+        .banner3 {
+            height: 487px;
+        }
+
+        .banner3 .banner3-img {
+            width: 318px;
+        }
+
+        .banner3 .banner3-text {
+            bottom: 57px;
+        }
+
+        .banner3 .banner3-text .h-1 {
+            font-size: 5rem;
+        }
+
+        /* =========== FORM INTAKE PAGE =========== */
+        .form-intake .therapy-border-img {
+            width: 149px;
+            height: 52px;
+        }
+    }
+
+    @media only screen and (max-width:320px) {
+
+        .our-team .curve-border {
+            top: 543px;
+            left: 168px;
+        }
+
+        .our-team .curve-border2 {
+            top: 1157px;
+            left: 135px;
+        }
+
+        .client-mem .card-body {
+            width: 260px;
+        }
+
+        .mobile-screen-nav #items {
+            position: relative;
+            top: 76%;
+        }
+
+        .about-nikki .wrapper .profile {
+            left: 12px;
+            width: 7.5rem;
+        }
+
+        .about-nikki .wrapper .content {
+            margin-left: 16px;
+            margin-right: -5px;
+            /* margin-top: 35px; */
+        }
+    }
+
+    @media only screen and (max-width:280px) {}
+}
+
+
+
+
+
+.member1-img {
+    width: 330px;
+    height: 330px;
+    top: 210px;
+    right: 110px;
+}
+
+.member1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+.error {
+    color: red;
+}
+
+.location-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 100px;
+}
+
+.location-img {
+    width: 300px;
+    height: 360px;
+    top: 180px;
+    border-radius: 5px 10px 20px 30px;
+    right: 100px;
+}
+
+.sign-fields .inputField {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 6px 0px;
+    outline: none;
+}
+
+.git_p p {
+    font-size: 1.2rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10000;
+    display: none;
+}
+
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #c8a180;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #156aa1;
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #6bcedd;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.exp_date {
+    width: 60% !important;
+}
+
+
+select.selectLocationField {
+    background: transparent;
+    border: 2px solid #4D4D4D;
+    border-radius: 14px;
+    width: 100%;
+    padding: 18px 28px;
+    font-family: "Solway-Reg";
+}
